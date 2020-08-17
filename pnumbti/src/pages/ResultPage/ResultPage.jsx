@@ -25,17 +25,12 @@ const resultData = [{
   type: "INTJ",
   mainImage: "",
   inFriendsBirthDay: "",
-  inMyBirthDay: ""
+  inMyBirthDay: "",
+  fitFriendsType: "ENTP",
+  fitFriendsText: "최고최고",
 
-
-
-
-
-
-
-
-
-
+  unfitFriendsType: "ISTJ",
+  unfitFriendsText: "안놀아 ㅠㅠ",
 
 }]
 
