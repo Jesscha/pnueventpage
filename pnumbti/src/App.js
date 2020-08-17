@@ -10,7 +10,7 @@ function App() {
     <div className="container">
       <Router>
         <Switch>
-          <Route path="/result">
+          <Route path="/result/:mbti">
             <ResultPage />
           </Route>
           <Route path="/question">
