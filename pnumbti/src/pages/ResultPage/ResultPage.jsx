@@ -22,6 +22,11 @@ function ResultPage() {
 
 
 const resultData = [{
+  type: "INTJ",
+  mainImage: "",
+  inFriendsBirthDay: "",
+  inMyBirthDay: ""
+
 
 
 
