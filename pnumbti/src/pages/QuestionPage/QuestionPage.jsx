@@ -74,15 +74,10 @@ function QuestionPage() {
     }
 
     // 마지막 페이지면 다음장 가기기능 정지
-    if (questionIndex + 1 < numberOfQuestions) {
-      setQuestionIndex(questionIndex + 1)
-    } else {
-      setIsLast(true)
-
-
+    setQuestionIndex(questionIndex + 1)
+    if (questionIndex + 1 === numberOfQuestions) {
+      setIsLast(true);
     }
-
-
   }
 
   const calulateMBTI = () => {
@@ -120,7 +115,7 @@ function QuestionPage() {
         </div>
       }
 
-      <ProgressBar bgcolor="antiquewhite" completed={((questionIndex + 1) / numberOfQuestions * 100)} />
+      <ProgressBar bgcolor="antiquewhite" completed={((questionIndex) / numberOfQuestions * 100)} />
     </div>
   );
 }
