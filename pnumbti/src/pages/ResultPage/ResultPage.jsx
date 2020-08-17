@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { } from 'react';
 import { useParams } from 'react-router-dom';
+
 
 
 // 16가지 결과를 kv로 저장해 놓는다.
@@ -14,9 +15,16 @@ function ResultPage() {
   return (
     <div>
       ResultPage {mbti} {mbtiData.fitFriendsType}
+      <div style={{ width: "100%" }}
+      >
+
+        <img style={{ width: "100%" }} src={require('../../asset/test.gif')} alt="" />
+      </div>
+
     </div>
   );
 }
+
 
 
 const resultData = {
