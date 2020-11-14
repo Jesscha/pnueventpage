@@ -1,5 +1,8 @@
 import React, { } from 'react';
-import { useParams } from 'react-router-dom';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import resultData from '../../asset/resultData';
 
 
 
@@ -10,186 +13,132 @@ function ResultPage() {
   const { mbti } = useParams();
 
   const mbtiData = resultData[mbti.trim()];
-  console.log(resultData["INTP"])
-  console.log({ mbti })
+  const [allArr, setAllArr] = useState([]);
+  const [resultKeys , setResultKeys] = useState(Object.keys(resultData))
+  useEffect(
+    ()=>{
+      const newArr = []
+      for (let key of resultKeys){
+        newArr.push(resultData[key])
+      }
+      setAllArr(newArr)
+    }, []
+  )
+  // console.log(allArr)
+  // console.log(resultKeys)
   return (
-    <div>
+    <>
+
+      {
+        mbti.trim() === "all"?
+        <div className="result-all">
+          {
+            allArr.map((type, i) =>{
+              console.log(type)
+              return(
+                <div>
+                  <Link
+                  key = {i}
+                  to ={`/result/${resultKeys[i]}`}
+                  >
+                  {type.nickName}
+                  </Link>
+                </div>
+                
+              )
+            })
+          }
+        </div>
+        :
+      <div>
       ResultPage {mbti} {mbtiData.fitFriendsType}
       <div style={{ width: "100%" }}
       >
+        <div className="result-head">
+          <div>
+            {mbtiData.nickNameDesc}
+          </div>
+          <div>
+            {mbtiData.nickName}
+          </div>
+        </div>
+        {mbtiData.mainImage && <img style={{ width: "100%" }} src={mbtiData.mainImage} alt="" /> }  
+        <div className="result-main-desc">
+            {mbtiData.mainDesc}
+        </div>
+        <div className="result-second-desc">
+          <div className="inFriendsBirthDay">
+            <div className="intro">
+              친구 생일에 나는 
+            </div>
+           
+            {mbtiData.inFriendsBirthDay}
+          </div>
 
-        <img style={{ width: "100%" }} src={require('../../asset/test.gif')} alt="" />
+          <div className="inMyBirthDay">
+            <div className="intro">
+              내 생일에 나는 
+            </div>
+              {mbtiData.inMyBirthDay}
+          </div>
+           
+        </div>
+        <div className="result-third-desc">
+          <div>
+            궁합
+          </div>
+          <div className="result-relation" >
+            <div className="left"
+            >
+              <Link
+              to ={`/result/${mbtiData.fitFriendsType}`}
+              >
+                {mbtiData.fitFriendsNickName}
+              </Link>
+            </div>
+            <div className="right"
+            >
+              <Link
+              to ={`/result/${mbtiData.unfitFriendsType}`}
+              >
+                {mbtiData.unfitFriendsNickName}
+              </Link>
+            
+
+            </div>
+
+          </div>
+        </div>
+        <div className="result-go-toPnuu">
+        내 생일 펀딩해 보기
+        </div>
+        <div className="result-go-toPnuu">
+          다가오는 친구 생일 제대로 축하해주기
+        </div>
+        <div className ="result-move-to-all">
+        <Link
+              to ={`/result/all`}
+              >
+                전체 결과 보기
+        </Link>
+          
+
+        </div>
+        
       </div>
 
     </div>
+
+
+        
+      }
+    
+    </>
   );
 }
 
 
 
-const resultData = {
-  INTJ: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  INTP: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ENTJ: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ENTP: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  INFJ: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  INFP: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ENFJ: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ENFP: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ISTJ: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ISFJ: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ESTJ: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ESFJ: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ISTP: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ISFP: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ESTP: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-  ESFP: {
-    mainImage: "",
-    inFriendsBirthDay: "",
-    inMyBirthDay: "",
-    fitFriendsType: "ENTP",
-    fitFriendsText: "최고최고",
-
-    unfitFriendsType: "ISTJ",
-    unfitFriendsText: "안놀아 ㅠㅠ",
-  },
-
-}
 
 
 

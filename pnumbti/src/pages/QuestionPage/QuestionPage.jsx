@@ -92,18 +92,18 @@ function QuestionPage() {
 
   }
 
-  console.log("abc")
+  
 
 
 
   return (
     <div style={{ width: "100%" }}>
       {!isLast ? <div>
-        <h1>Q. {questionData[questionIndex].question}</h1>
+        <h1>{questionData[questionIndex].question}</h1>
         <p>{questionData[questionIndex].describtion}</p>
         {/* 체커블하게 만들자 다시 취소할 수도 있으니까 체크 할 때   */}
-        <button onClick={() => setMBTIScore(questionData[questionIndex].optionOne)}> 1번 선택지 </button>
-        <button onClick={() => setMBTIScore(questionData[questionIndex].optionTwo)}> 2번 선택지 </button>
+        <button onClick={() => setMBTIScore(questionData[questionIndex].optionOne)}> {questionData[questionIndex].optionOneText} </button>
+        <button onClick={() => setMBTIScore(questionData[questionIndex].optionTwo)}> {questionData[questionIndex].optionTwoText} </button>
       </div> : <div>
 
           {/* 채팅앱 비스무리한  컴포넌트 구현부  */}
