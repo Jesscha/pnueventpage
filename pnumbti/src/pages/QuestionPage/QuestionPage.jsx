@@ -30,6 +30,8 @@ import questionData from '../../asset/qustionData.js';
 
 function QuestionPage() {
 
+  
+
   const numberOfQuestions = questionData.length
 
   const [isLast, setIsLast] = useState(false);
@@ -89,6 +91,8 @@ function QuestionPage() {
     return `${EI}${SN}${TF}${JP}`
 
   }
+
+  console.log("abc")
 
 
 
