@@ -1,6 +1,6 @@
 const questionData = [
   {
-    question: `Q. "드레스 코드는 두 가지야.
+    question: `"드레스 코드는 두 가지야.
     여기서 입고와줘."
     나의 선택은
     `,
@@ -9,11 +9,11 @@ const questionData = [
     화려하게`,
     optionTwoText: `단정하고
     깔끔하게`,
-    optionOne: `E`,    
+    optionOne: `E`,
     optionTwo: `I`,
   },
   {
-    question: `Q. 이제 선물을 고르러 가볼까요?
+    question: `이제 선물을 고르러 가볼까요?
     `,
     describtion: '',
     optionOneText: `친구가
@@ -36,7 +36,7 @@ const questionData = [
     optionTwo: `N`,
   },
   {
-    question: `Q. 친구가 꽃을 정말 좋아해요.
+    question: `친구가 꽃을 정말 좋아해요.
     어디서 살까요?`,
     describtion: '',
     optionOneText: ` 인스타에서 유명한 꽃집에서 예약한다.`,
@@ -46,7 +46,7 @@ const questionData = [
     optionTwo: `P`,
   },
   {
-    question: `Q. 지난 번에 편지를 받았어요.
+    question: `지난 번에 편지를 받았어요.
     친구에게 편지도 쓸까요?
    `,
     describtion: '',
@@ -56,7 +56,7 @@ const questionData = [
     optionTwo: `P`,
   },
   {
-    question: `Q. 드디어 파티 당일!
+    question: `드디어 파티 당일!
     지금 내 기분은    
     `,
     describtion: '',
@@ -67,7 +67,7 @@ const questionData = [
     optionTwo: `I`,
   },
   {
-    question: `Q. 파티장에 도착했어요.
+    question: `파티장에 도착했어요.
     나의 리액션은
     `,
     describtion: '',
@@ -78,7 +78,7 @@ const questionData = [
     optionTwo: `I`,
   },
   {
-    question: `Q. 생일 당사자에게 말을 건네보아요.
+    question: `생일 당사자에게 말을 건네보아요.
     `,
     describtion: '',
     optionOneText: `“파티 준비하느라 진짜 고생 많았어ㅠㅠ”`,
@@ -87,7 +87,7 @@ const questionData = [
     optionTwo: `T`,
   },
   {
-    question: `Q. 파티가 무르익고 있어요.
+    question: `파티가 무르익고 있어요.
     나는 지금
     `,
     describtion: '',
@@ -97,7 +97,7 @@ const questionData = [
     optionTwo: `N`,
   },
   {
-    question: `Q. 생일 케이크 세레모니 때 나는    
+    question: `생일 케이크 세레모니 때 나는    
     `,
     describtion: '',
     optionOneText: `어느 타이밍에 준비한 선물을 꺼낼 지 고민한다.    `,
@@ -106,7 +106,6 @@ const questionData = [
     optionTwo: `N,
     `,
   },
-
 
   {
     question: '즐거운 시간을 보냈네요. 벌써 밤 10시네요. 집에 갈까요?',

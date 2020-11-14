@@ -122,7 +122,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+a {
+  all: unset;
+}
+a:visited {
+  all: unset;
+}
+a:active {
+  all: unset;
+}
 * {
   box-sizing: border-box;
 }
@@ -133,6 +141,12 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: antiquewhite;
+  box-sizing: content-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .container {
@@ -143,8 +157,8 @@ body {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  padding: 16px;
+  padding: 40px;
   background-color: white;
 }

@@ -1,28 +1,44 @@
 import React from 'react';
 import './HomePage.scss'
-import { Link } from 'react-router-dom';
+import { withRouter } from "react-router-dom";
+// import { Link } from 'react-router-dom';
 
 
-function HomePage() {
+function HomePage({ history }) {
   return (
-    <div classNameˇ="home-container">
-      <h1>Pnuu</h1>
-      <p>
-        여느 때와 같은 평일 저녁,
-        당신은 친구에게서 초대장과 봉투를 받게 됩니다.
+    <div className="home-container">
+      <div className="home-logo">Pnuu</div>
+      <h1 className="home-headText">
+        생일로 알아보는 <br />
+        내 속마음
+      </h1>
 
-        "내 생일 파티는 금요일에 여기서 해, 꼭 와줘."
-        라고 말하면서 말이죠.
+      <p className="home-mainText">
 
-        호기심이 든 당신은 바로 봉투 안을 열어보았습니다.
+        "내 생일 파티는 금요일에 여기서 해, <br />
+        꼭 와줘."<br />
+        <br />
+
+        가장 친한 친구가 초대장을<br />
+        건네줍니다.
       </p>
 
-      <Link to="/question">
+
+      <div
+        className="home-start-button"
+        onClick={() => {
+          history.push('/question')
+        }}
+      >
         시작하기
-      </Link>
+      </div>
+
+
 
     </div>
   );
 }
 
-export default HomePage;
+
+
+export default withRouter(HomePage);

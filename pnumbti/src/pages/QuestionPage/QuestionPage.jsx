@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProgressBar from '../ProgressBar/ProgressBar.jsx'
 import questionData from '../../asset/qustionData.js';
+import './QuestionPage.scss'
+import { stringBreak } from '../../utils/utils.js';
 
 
 
@@ -30,11 +32,11 @@ import questionData from '../../asset/qustionData.js';
 
 function QuestionPage() {
 
-  
+
 
   const numberOfQuestions = questionData.length
 
-  const [isLast, setIsLast] = useState(false);
+  let [isLast, setIsLast] = useState(false);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [E, setE] = useState(0);
   const [I, setI] = useState(0);
@@ -91,35 +93,77 @@ function QuestionPage() {
     return `${EI}${SN}${TF}${JP}`
 
   }
-
-  
-
-
-
+  // isLast = true
   return (
-    <div style={{ width: "100%" }}>
-      {!isLast ? <div>
-        <h1>{questionData[questionIndex].question}</h1>
-        <p>{questionData[questionIndex].describtion}</p>
-        {/* 체커블하게 만들자 다시 취소할 수도 있으니까 체크 할 때   */}
-        <button onClick={() => setMBTIScore(questionData[questionIndex].optionOne)}> {questionData[questionIndex].optionOneText} </button>
-        <button onClick={() => setMBTIScore(questionData[questionIndex].optionTwo)}> {questionData[questionIndex].optionTwoText} </button>
-      </div> : <div>
+    <div
+      className="question-container"
+      style={{ width: "100%" }}>
+      {!isLast ?
+        <div className="question-area">
+          <h1 className="question">
+            Q. {stringBreak(questionData[questionIndex].question)}
+          </h1>
+          <div className="optionContainner">
+            <div
+              className="optionSelect"
+              onClick={() => setMBTIScore(questionData[questionIndex].optionOne)}>
+              {
+                stringBreak(questionData[questionIndex].optionOneText)}
+            </div>
+            <div
+              className="optionSelect"
+              onClick={() => setMBTIScore(questionData[questionIndex].optionTwo)}>
+              {stringBreak(questionData[questionIndex].optionTwoText)}
+            </div>
+          </div>
+          <div
+            className="progressbar-position"
+          >
+            <ProgressBar bgcolor="antiquewhite" completed={((questionIndex + 1) / numberOfQuestions * 100)} />
 
-          {/* 채팅앱 비스무리한  컴포넌트 구현부  */}
+          </div>
+        </div> :
+
+
+        <div>
+
           {lastQuestionText.map((text, i) => {
-            return <p key={i}>
-              {text.text}
-            </p>
+            return (
+              <div
+                className="chatting-text"
+                key={i}>
+                {stringBreak(text.text)}
+              </div>)
           })}
           {/* 생일 보내기 리퀘ㅔ스트 보내는 구현부 */}
-          <input placeholder={"내 생일은... "} />
+          <div className="myBirthDay">
+            <input placeholder={"내 생일은... "} />
+          </div>
 
-          <Link to={`/result/${calulateMBTI()}`} > 결과 보러가기 {calulateMBTI()}</Link>
+          <Link
+            to={`/result/${calulateMBTI()}`}
+            className="go-to-result"
+            style={{
+              display: "block",
+              boxSizing: "content-box"
+            }}
+          >
+            결과 보러가기</Link>
+          {/* <div
+            className="progressbar-position"
+          >
+            <ProgressBar bgcolor="antiquewhite" completed={(100)} />
+
+          </div> */}
         </div>
       }
 
-      <ProgressBar bgcolor="antiquewhite" completed={((questionIndex) / numberOfQuestions * 100)} />
+
+
+      <div className="logo">
+        pnuu
+      </div>
+
     </div>
   );
 }

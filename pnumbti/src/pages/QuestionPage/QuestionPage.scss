@@ -1,0 +1,75 @@
+.question-container {
+  position: relative;
+  height: 100%;
+  .question-area {
+    .question {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 56px;
+      height: 100px;
+    }
+
+    .optionContainner {
+      display: flex;
+      margin-top: 32px;
+
+      .optionSelect {
+        border: solid 1px black;
+        width: 48%;
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 8px;
+        padding-right: 8px;
+        height: 300px;
+        cursor: pointer;
+      }
+      .optionSelect:active {
+        transform: scale(0.98);
+      }
+      .optionSelect:first-of-type {
+        margin-right: 2%;
+      }
+    }
+  }
+  .progressbar-position {
+    margin-top: 56px;
+  }
+
+  .logo {
+    position: absolute;
+    bottom: 32px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .chatting-text {
+    border: solid 1px black;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .chatting-text:first-of-type {
+    margin-top: 0;
+  }
+  .myBirthDay {
+    margin-top: 20px;
+  }
+  .go-to-result {
+    margin-top: 20px;
+    color: black;
+    border: solid 1px black;
+    cursor: pointer;
+    padding: 20px;
+    // width: 100%;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+  }
+
+  .go-to-result:active {
+    transform: scale(0.98);
+  }
+}
