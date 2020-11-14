@@ -14,15 +14,16 @@ function ResultPage() {
 
   const mbtiData = resultData[mbti.trim()];
   const [allArr, setAllArr] = useState([]);
-  const [resultKeys , setResultKeys] = useState(Object.keys(resultData))
+  const [resultKeys , setResultKeys] = useState()
   useEffect(
     ()=>{
+      setResultKeys(Object.keys(resultData))
       const newArr = []
       for (let key of resultKeys){
         newArr.push(resultData[key])
       }
       setAllArr(newArr)
-    }, []
+    }, [resultKeys]
   )
   // console.log(allArr)
   // console.log(resultKeys)
