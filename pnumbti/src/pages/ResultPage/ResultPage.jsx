@@ -1,6 +1,5 @@
 import React, { } from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+
 import { Link, useParams } from 'react-router-dom';
 import resultData from '../../asset/resultData';
 
@@ -13,18 +12,17 @@ function ResultPage() {
   const { mbti } = useParams();
 
   const mbtiData = resultData[mbti.trim()];
-  const [allArr, setAllArr] = useState([]);
-  const [resultKeys , setResultKeys] = useState([])
-  useEffect(
-    ()=>{
-      setResultKeys(Object.keys(resultData))
-      const newArr = []
-      for (let key of resultKeys){
-        newArr.push(resultData[key])
-      }
-      setAllArr(newArr)
-    }, [resultKeys]
-  )
+  const allArr = makeResultArr();
+  const resultKeys =Object.keys(resultData);
+
+  function makeResultArr(){
+    const newArr = []
+    for (let key of Object.keys(resultData)){
+      newArr.push(resultData[key])
+    }
+    return newArr
+
+  }
   // console.log(allArr)
   // console.log(resultKeys)
   return (
