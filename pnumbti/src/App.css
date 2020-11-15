@@ -152,7 +152,7 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  max-height: 736px;
+  max-height: 760px;
   max-width: 414px;
   border: 1px solid black;
   display: flex;
@@ -161,4 +161,9 @@ body {
   align-items: center;
   padding: 40px;
   background-color: white;
+  overflow-y: scroll;
+}
+
+a {
+  color: black;
 }

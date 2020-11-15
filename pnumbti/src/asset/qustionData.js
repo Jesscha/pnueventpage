@@ -13,8 +13,7 @@ const questionData = [
     optionTwo: `I`,
   },
   {
-    question: `이제 선물을 고르러 가볼까요?
-    `,
+    question: `이제 선물을 고르러 가볼까요?`,
     describtion: '',
     optionOneText: `친구가
     필요할만한걸

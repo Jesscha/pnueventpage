@@ -3,6 +3,19 @@
   align-items: center;
   flex-direction: column;
 
+  .all-elem {
+    margin-top: 24px;
+    cursor: pointer;
+    width: 100%;
+    padding: 40px;
+    border: solid 1px black;
+    text-align: center;
+  }
+
+  .all-elem:active {
+    transform: scale(0.98);
+  }
+
   .logo {
     width: 100%;
     text-align: center;
@@ -11,10 +24,110 @@
   }
 
   .result-head {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
     .subText {
     }
 
     .mainText {
+      font-size: 24px;
+      margin-top: 6px;
     }
+  }
+
+  .result-main-desc {
+    margin-top: 24px;
+    width: 100%;
+    padding: 40px;
+    border: solid 1px black;
+  }
+
+  .result-second-desc {
+    margin-top: 24px;
+    width: 100%;
+    padding: 40px;
+    border: solid 1px black;
+
+    .intro {
+      font-weight: bold;
+    }
+
+    .inMyBirthDay {
+      margin-top: 24px;
+    }
+  }
+
+  .result-third-desc {
+    margin-top: 24px;
+    width: 100%;
+    // padding: 40px;
+    // border: solid 1px black;
+
+    .firstText {
+      width: 100%;
+      text-align: center;
+    }
+
+    .result-relation {
+      margin-top: 24px;
+      display: flex;
+
+      .left {
+        width: 49%;
+        padding: 40px;
+        border: solid 1px black;
+        text-align: center;
+        margin-right: 2%;
+        cursor: pointer;
+      }
+      .left:active,
+      .right:active {
+        transform: scale(0.99);
+      }
+
+      .right {
+        width: 49%;
+        padding: 40px;
+        border: solid 1px black;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+  .result-go-toPnuu {
+    width: 100%;
+    margin-top: 24px;
+    padding: 32px;
+    border: solid 1px black;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .result-move-to-all {
+    width: 100%;
+    margin-top: 24px;
+    padding: 16px;
+    border: solid 1px black;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    a {
+      color: black;
+    }
+  }
+  .result-move-to-all:active {
+    transform: scale(0.99);
+  }
+
+  .survey {
+    margin-top: 24px;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
   }
 }

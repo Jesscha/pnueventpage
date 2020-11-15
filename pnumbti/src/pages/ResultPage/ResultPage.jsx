@@ -16,6 +16,11 @@ function ResultPage({ history }) {
   const mbtiData = resultData[mbti.trim()];
   const allArr = makeResultArr();
   const resultKeys = Object.keys(resultData);
+  const moveToTop = () => {
+    const container = document.querySelector(".container")
+    container.scroll(0, 0)
+
+  }
 
   function makeResultArr() {
     const newArr = []
@@ -39,6 +44,7 @@ function ResultPage({ history }) {
               allArr.map((type, i) => {
                 return (
                   <div
+                    className="all-elem"
                     onClick={() => {
                       history.push(`/result/${resultKeys[i]}`)
                     }}
@@ -71,42 +77,41 @@ function ResultPage({ history }) {
               <div className="result-second-desc">
                 <div className="inFriendsBirthDay">
                   <div className="intro">
-                    친구 생일에 나는
-            </div>
+                    친구 생일에 나는<br /><br />
+                  </div>
 
                   {stringBreak(mbtiData.inFriendsBirthDay)}
                 </div>
 
                 <div className="inMyBirthDay">
                   <div className="intro">
-                    내 생일에 나는
-            </div>
+                    내 생일에 나는<br /><br />
+                  </div>
                   {stringBreak(mbtiData.inMyBirthDay)}
                 </div>
 
               </div>
               <div className="result-third-desc">
-                <div>
+                <div className="firstText">
                   궁합
-          </div>
+                </div>
                 <div className="result-relation" >
                   <div className="left"
+                    onClick={() => {
+                      history.push(`/result/${mbtiData.fitFriendsType}`)
+                      moveToTop()
+                    }}
                   >
-                    <Link
-                      to={`/result/${mbtiData.fitFriendsType}`}
-                    >
-                      {mbtiData.fitFriendsNickName}
-                    </Link>
+                    {mbtiData.fitFriendsNickName}
+
                   </div>
                   <div className="right"
+                    onClick={() => {
+                      history.push(`/result/${mbtiData.unfitFriendsType}`)
+                      moveToTop()
+                    }}
                   >
-                    <Link
-                      to={`/result/${mbtiData.unfitFriendsType}`}
-                    >
-                      {mbtiData.unfitFriendsNickName}
-                    </Link>
-
-
+                    {mbtiData.unfitFriendsNickName}
                   </div>
 
                 </div>
@@ -117,15 +122,25 @@ function ResultPage({ history }) {
               <div className="result-go-toPnuu">
                 다가오는 친구 생일 제대로 축하해주기
         </div>
-              <div className="result-move-to-all">
-                <Link
-                  to={`/result/all`}
-                >
-                  전체 결과 보기
+              <div className="result-move-to-all"
+                onClick={() => {
+                  moveToTop()
+                  history.push(`/result/all`)
+
+                }}
+              >
+                전체 결과 보기
+              </div>
+              <Link
+                to={`/survey`}
+                className="survey"
+                style={{
+                  display: "block"
+                }}
+              >
+                설문하기
         </Link>
 
-
-              </div>
 
             </div>
 
