@@ -126,8 +126,11 @@
   .survey {
     margin-top: 24px;
     width: 100%;
+    padding: 16px;
+    border: solid 1px black;
     text-align: center;
-    text-decoration: underline;
     cursor: pointer;
+    text-align: center;
+    // text-decoration: underline;
   }
 }

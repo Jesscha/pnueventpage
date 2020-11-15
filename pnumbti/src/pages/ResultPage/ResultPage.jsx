@@ -1,6 +1,6 @@
 import React, { } from 'react';
 
-import { Link, useParams, withRouter } from 'react-router-dom';
+import { useParams, withRouter } from 'react-router-dom';
 import resultData from '../../asset/resultData';
 import './ResultPage.scss'
 import { stringBreak } from '../../utils/utils';
@@ -131,16 +131,16 @@ function ResultPage({ history }) {
               >
                 전체 결과 보기
               </div>
-              <Link
-                to={`/survey`}
+              <div
                 className="survey"
-                style={{
-                  display: "block",
-                  paddingBottom: "80px"
+                onClick={() => {
+                  history.push(`/survey`)
                 }}
               >
                 설문하기
-        </Link>
+
+              </div>
+
 
 
             </div>
