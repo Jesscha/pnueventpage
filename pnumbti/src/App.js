@@ -13,6 +13,7 @@ function App() {
         <meta charSet="utf-8" />
         <title>Pnuu-생일로 알아보는 당신의 속마음</title>
         <link rel="canonical" href="http://mysite.com/example" />
+        <meta property="og:title" content="Pnuu-생일로알아보는 내 속마음" />
       </Helmet>
       <Router>
         <Switch>
