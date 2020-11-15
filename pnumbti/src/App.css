@@ -147,12 +147,13 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  overflow: hidden;
 }
 
 .container {
   width: 100vw;
   height: 100vh;
-  max-height: 760px;
+  /* max-height: 760px; */
   max-width: 414px;
   border: 1px solid black;
   display: flex;
@@ -162,6 +163,7 @@ body {
   padding: 40px;
   background-color: white;
   overflow-y: scroll;
+  padding-bottom: 80px;
 }
 
 a {

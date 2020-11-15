@@ -135,7 +135,8 @@ function ResultPage({ history }) {
                 to={`/survey`}
                 className="survey"
                 style={{
-                  display: "block"
+                  display: "block",
+                  paddingBottom: "80px"
                 }}
               >
                 설문하기
