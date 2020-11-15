@@ -16,8 +16,7 @@ function App() {
         <meta property="og:title" content="Pnuu" />
         <meta property="og:description" content="생일로알아보는 내 속마음" />
         <meta property="og:url" content="https://pnu.netlify.app/" />
-
-        {/* og:title, og:description, og:image */}
+        <meta property="og:type" content="website" />
       </Helmet>
       <Router>
         <Switch>
