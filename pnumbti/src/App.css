@@ -115,7 +115,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -139,31 +139,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: antiquewhite;
-  box-sizing: content-box;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  overflow: hidden;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .container {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+  max-height: 821px;
+
   /* max-height: 760px; */
-  max-width: 414px;
-  border: 1px solid black;
+  max-width: 375px;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  padding: 40px;
+
   background-color: white;
   overflow-y: scroll;
   padding-bottom: 80px;
+}
+
+.container {
+  -ms-overflow-style: none;
+}
+.container::-webkit-scrollbar {
+  display: none;
 }
 
 a {

@@ -1,4 +1,4 @@
-@import '../../static/css/variable.scss';
+@import "../../static/css/variable.scss";
 
 .home-container {
   display: flex;
@@ -8,14 +8,48 @@
   height: 100%;
   width: 100%;
 
+  .homeMainImage {
+    width: 320px;
+    margin-top: 64px;
+  }
+
   .home-logo {
-    font-size: 20px;
+    margin-top: 64px;
+    width: 113.14px;
+    img {
+      width: 100%;
+    }
   }
   .home-headText {
-    font-size: 40px;
-    margin-top: 56px;
+    margin-top: 32px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
     text-align: center;
   }
+
+  .home-headText-point {
+    color: $point;
+  }
+  .homeDescText {
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: $black;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  .homeCTAButton {
+    margin-top: 36px;
+    width: 330px;
+    height: 70px;
+  }
+
   .home-mainText {
     margin-top: 56px;
     width: 100%;
