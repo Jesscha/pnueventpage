@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ProgressBar from "../ProgressBar/ProgressBar.jsx";
 import questionData from "../../asset/qustionData.js";
 import "./QuestionPage.scss";
 import { stringBreak } from "../../utils/utils.js";
-import arrowIcon from "../../asset/arrow.svg";
-
+import introMessage from "../../asset/intro_message.png";
+import logo from "../../asset/logo_black.svg";
 // 이 컴포넌트의 state로 M,B,T,I 를 넣는다.
 // 각 문항이 클릭 되면 두가지 액션이 시작된다.
 // 1. 다음 문항을 불러오는 기능, 2. 해당 문항에 기반한 점수를 기록하는 기능 //
@@ -83,26 +83,59 @@ function QuestionPage() {
     let SN = S > N ? "S" : "N";
     let TF = T > F ? "T" : "F";
     let JP = J > P ? "J" : "P";
-
     return `${EI}${SN}${TF}${JP}`;
   };
   // isLast = true
+
+  useEffect(() => {
+    switch (questionIndex) {
+      case 0:
+        // alert(0);
+        document.body.style.backgroundColor = "#a2d7ff";
+        break;
+      case 1:
+        document.body.style.backgroundColor = "#89ccff";
+        break;
+      case 2:
+        document.body.style.backgroundColor = "#67bdfe";
+        break;
+      case 3:
+        document.body.style.backgroundColor = "#4ea2e0";
+        break;
+      case 4:
+        document.body.style.backgroundColor = "#51a5e4";
+        break;
+      case 5:
+        document.body.style.backgroundColor = "#2d80be";
+        break;
+      case 6:
+        document.body.style.backgroundColor = "#2470a9";
+        break;
+      case 7:
+        document.body.style.backgroundColor = "#16507b";
+        break;
+      case 8:
+        document.body.style.backgroundColor = "#0c3758";
+        break;
+      case 4:
+        document.body.style.backgroundColor = "#0e2f47";
+        break;
+      case 4:
+        document.body.style.backgroundColor = "#012037";
+        break;
+
+      default:
+        console.log("a");
+    }
+  }, [questionIndex]);
+
   return (
     <div className="question-container" style={{ width: "100%" }}>
       {isFirst ? (
         <div>
-          <div>
-            코로나가 종식된 어느 날,
-            <br />
-            가장 친한 친구가 초대장을 건네줍니다.
-            <br />
-            “내 생일 파티는 금요일에 여기서 해,
-            <br />
-            와줄 거지?”
-          </div>
           <img
-            className="arrow"
-            src={arrowIcon}
+            className="introMessage"
+            src={introMessage}
             onClick={() => {
               setIsFirst(false);
             }}
@@ -111,9 +144,22 @@ function QuestionPage() {
         </div>
       ) : !isLast ? (
         <div className="question-area">
+          <div className="progressbar-position">
+            <ProgressBar
+              bgcolor="#ffa4a4"
+              completed={((questionIndex + 1) / numberOfQuestions) * 100}
+            />
+          </div>
+
           <h1 className="question">
-            Q. {stringBreak(questionData[questionIndex].question)}
+            <img src={questionData[questionIndex].question} alt="" />
           </h1>
+
+          <img
+            src={questionData[questionIndex].mainImage}
+            alt=""
+            className="mainImage"
+          />
           <div className="optionContainner">
             <div
               className="optionSelect"
@@ -121,7 +167,7 @@ function QuestionPage() {
                 setMBTIScore(questionData[questionIndex].optionOne)
               }
             >
-              {stringBreak(questionData[questionIndex].optionOneText)}
+              <img src={questionData[questionIndex].optionOneText} alt="" />
             </div>
             <div
               className="optionSelect"
@@ -129,14 +175,8 @@ function QuestionPage() {
                 setMBTIScore(questionData[questionIndex].optionTwo)
               }
             >
-              {stringBreak(questionData[questionIndex].optionTwoText)}
+              <img src={questionData[questionIndex].optionTwoText} alt="" />
             </div>
-          </div>
-          <div className="progressbar-position">
-            <ProgressBar
-              bgcolor="antiquewhite"
-              completed={((questionIndex + 1) / numberOfQuestions) * 100}
-            />
           </div>
         </div>
       ) : (
@@ -172,7 +212,9 @@ function QuestionPage() {
         </div>
       )}
 
-      <div className="logo">pnuu</div>
+      <div className="logo">
+        <img src={logo} alt="" />
+      </div>
     </div>
   );
 }

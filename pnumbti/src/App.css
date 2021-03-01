@@ -133,6 +133,7 @@ a:active {
 }
 * {
   box-sizing: border-box;
+  overflow: visible;
 }
 
 body {
@@ -140,24 +141,27 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Noto Sans KR", sans-serif;
+  transition: all 300ms;
 }
 
 .container {
   width: 100vw;
   /* height: 100vh; */
+  height: 736px;
   max-height: 821px;
+  overflow-x: visible;
 
   /* max-height: 760px; */
-  max-width: 375px;
+  max-width: 280px;
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
 
-  background-color: white;
-  overflow-y: scroll;
-  padding-bottom: 80px;
+  /* background-color: white; */
+  /* overflow-y: scroll; */
+  /* padding-bottom: 80px; */
 }
 
 .container {

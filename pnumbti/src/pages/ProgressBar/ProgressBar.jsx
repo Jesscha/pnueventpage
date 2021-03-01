@@ -1,24 +1,24 @@
-
-
 import React from "react";
+import heartIcon from "../../asset/heart.svg";
+import "./ProgressBar.scss";
 
 const ProgressBar = ({ bgcolor, completed }) => {
   const containerStyles = {
-    height: 20,
-    width: '100%',
-    backgroundColor: "#e0e0de",
-    borderRadius: 50,
+    height: 2,
+    width: "100%",
+    backgroundColor: "#ffffff",
+    // borderRadius: 50,
     margin: "auto2",
-  }
+  };
 
   const fillerStyles = {
-    height: '100%',
+    height: "100%",
     width: `${completed}%`,
     backgroundColor: bgcolor,
-    transition: 'width 0.5s ease-in-out',
-    borderRadius: 'inherit',
-    textAlign: 'right',
-  }
+    transition: "width 0.5s ease-in-out",
+    borderRadius: "inherit",
+    textAlign: "right",
+  };
 
   // const labelStyles = {
   //   padding: 5,
@@ -28,11 +28,11 @@ const ProgressBar = ({ bgcolor, completed }) => {
 
   return (
     <div style={containerStyles}>
-      <div style={fillerStyles}>
+      <div className="filler" style={fillerStyles}>
+        <img className="heartIcon" src={heartIcon} alt="" />
       </div>
     </div>
   );
 };
-
 
 export default ProgressBar;

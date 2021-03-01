@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./HomePage.scss";
 import { withRouter } from "react-router-dom";
 // import { Link } from 'react-router-dom';
 import mainGif from "../../asset/main.gif";
 import logo from "../../asset/logo_black.svg";
+import startTheTestText from "../../asset/start_test_textBox.png";
 
 function HomePage({ history }) {
+  useEffect(() => {
+    document.body.style.backgroundColor = "white";
+  }, []);
+
   return (
     <div className="home-container">
       <div className="home-logo">
@@ -20,14 +25,13 @@ function HomePage({ history }) {
 
       <p className="homeDescText">생일 파티에서 내 성격은?</p>
 
-      <button
+      <img
+        src={startTheTestText}
         onClick={() => {
           history.push("/question");
         }}
         className="homeCTAButton"
-      >
-        테스트 시작하기
-      </button>
+      ></img>
 
       {/* <p className="home-mainText">
 
