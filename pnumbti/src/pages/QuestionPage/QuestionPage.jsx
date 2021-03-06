@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import ProgressBar from "../ProgressBar/ProgressBar.jsx";
 import questionData from "../../asset/qustionData.js";
 import "./QuestionPage.scss";
@@ -28,7 +28,7 @@ import whiteLogo from "../../asset/logo_white.svg";
 //  마지막페이지 메시지 오는 느낌적 느낌으로 만들어야 함
 // test
 
-function QuestionPage() {
+function QuestionPage({history}) {
   const numberOfQuestions = questionData.length;
 
   let [isLast, setIsLast] = useState(false);
@@ -184,35 +184,19 @@ function QuestionPage() {
           </div>
         </div>
       ) : (
-        <div>
-          {lastQuestionText.map((text, i) => {
-            return (
-              <div className="chatting-text" key={i}>
-                {stringBreak(text.text)}
-              </div>
-            );
-          })}
-          {/* 생일 보내기 리퀘ㅔ스트 보내는 구현부 */}
-          <div className="myBirthDay">
-            <input placeholder={"내 생일은... "} />
-          </div>
-
-          <Link
-            to={`/result/${calulateMBTI()}`}
-            className="go-to-result"
-            style={{
-              display: "block",
-              boxSizing: "content-box",
-            }}
-          >
-            결과 보러가기
-          </Link>
-          {/* <div
-            className="progressbar-position"
-          >
-            <ProgressBar bgcolor="antiquewhite" completed={(100)} />
-
-          </div> */}
+            <div className="endingQuestion question-area">
+              <img className="endingLogo" src="/img/endingMain.gif" alt="" />
+              <img  className="endingMessage" src="/img/last_message.png" alt=""/>
+              
+              <img
+              src={'/img/showResultButton.png'}
+              onClick={() => {
+                history.push(`/result/${calulateMBTI()}`);
+              }}
+              className="showResultButton"
+              alt=''
+              />
+        
         </div>
       )}
 
@@ -223,12 +207,4 @@ function QuestionPage() {
   );
 }
 
-const lastQuestionText = [
-  {
-    text:
-      "생일 함께해줘서 정말 고마웠어 친구야. 준 선물도 진짜 필요한 선물이었어. 네 생일때도 꼭 필요한 선물을 주고 싶어.",
-  },
-  { text: "네 생일은 언제였지?" },
-];
-
-export default QuestionPage;
+export default withRouter(QuestionPage) ;

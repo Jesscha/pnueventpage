@@ -98,3 +98,20 @@
     transform: scale(0.98);
   }
 }
+
+.endingQuestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.endingLogo {
+  width: 164px;
+}
+
+.endingMessage {
+  width: 100%;
+}
+.showResultButton {
+  width: 100%;
+}
