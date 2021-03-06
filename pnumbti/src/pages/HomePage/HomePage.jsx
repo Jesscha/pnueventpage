@@ -4,7 +4,7 @@ import { withRouter } from "react-router-dom";
 // import { Link } from 'react-router-dom';
 import mainGif from "../../asset/main.gif";
 import logo from "../../asset/logo_black.svg";
-import startTheTestText from "../../asset/start_test_textBox.png";
+
 
 function HomePage({ history }) {
   useEffect(() => {

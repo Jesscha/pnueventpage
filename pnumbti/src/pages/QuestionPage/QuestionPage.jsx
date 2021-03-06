@@ -6,6 +6,7 @@ import "./QuestionPage.scss";
 import { stringBreak } from "../../utils/utils.js";
 import introMessage from "../../asset/intro_message.png";
 import logo from "../../asset/logo_black.svg";
+import whiteLogo from "../../asset/logo_white.svg";
 // 이 컴포넌트의 state로 M,B,T,I 를 넣는다.
 // 각 문항이 클릭 되면 두가지 액션이 시작된다.
 // 1. 다음 문항을 불러오는 기능, 2. 해당 문항에 기반한 점수를 기록하는 기능 //
@@ -133,7 +134,7 @@ function QuestionPage() {
   }, [questionIndex]);
 
   return (
-    <div className="question-container" style={{ width: "100%" }}>
+    <div className="question-container" >
       {isFirst ? (
         <div>
           <img
@@ -216,7 +217,7 @@ function QuestionPage() {
       )}
 
       <div className="logo">
-        <img src={logo} alt="" />
+        <img src={ (questionIndex > 6 && questionIndex !== 11 )  ? whiteLogo: logo} alt="" />
       </div>
     </div>
   );
