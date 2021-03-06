@@ -7,6 +7,7 @@ import "./QuestionPage.scss";
 import introMessage from "../../asset/intro_message.png";
 import logo from "../../asset/logo_black.svg";
 import whiteLogo from "../../asset/logo_white.svg";
+// import PreloadImage from 'react-preload-image';
 // 이 컴포넌트의 state로 M,B,T,I 를 넣는다.
 // 각 문항이 클릭 되면 두가지 액션이 시작된다.
 // 1. 다음 문항을 불러오는 기능, 2. 해당 문항에 기반한 점수를 기록하는 기능 //
@@ -155,16 +156,17 @@ function QuestionPage({history}) {
             />
           </div>
 
-          <h1 className="question">
+          <h1 className="question" >
             <img src={questionData[questionIndex].question} alt="mainq" />
           </h1>
-
-          <img
-            src={questionData[questionIndex].mainImage}
-            alt="mainImg"
-            className="mainImage"
-          />
-          <div className="optionContainner">
+            <img
+               src={questionData[questionIndex].mainImage}
+              alt="mainImg"
+              className="mainImage"
+            
+            />
+         
+          <div className="optionContainner"  > 
             <div
               className="optionSelect"
               onClick={() =>
@@ -184,7 +186,7 @@ function QuestionPage({history}) {
           </div>
         </div>
       ) : (
-            <div className="endingQuestion question-area">
+            <div className="endingQuestion">
               <img className="endingLogo" src="/img/endingMain.gif" alt="" />
               <img  className="endingMessage" src="/img/last_message.png" alt=""/>
               
