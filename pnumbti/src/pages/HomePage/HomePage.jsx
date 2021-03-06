@@ -19,18 +19,20 @@ function HomePage({ history }) {
       <img className="homeMainImage" src={mainGif} alt="" />
 
       <h1 className="home-headText">
-        <span className="home-headText-point">생일</span>로 알아보는 <br />내
-        속마음
+        <img src="/img/mainTitle.png" alt=""/>
       </h1>
 
-      <p className="homeDescText">생일 파티에서 내 성격은?</p>
+      <p className="homeDescText">
+        <img src="/img/mainDesc.png" alt=""/>
+      </p>
 
       <img
-        src={startTheTestText}
+        src={'/img/sartTextButton.png'}
         onClick={() => {
           history.push("/question");
         }}
         className="homeCTAButton"
+        alt=''
       ></img>
 
       {/* <p className="home-mainText">

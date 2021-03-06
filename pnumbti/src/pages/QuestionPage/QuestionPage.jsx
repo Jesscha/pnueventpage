@@ -25,6 +25,7 @@ import logo from "../../asset/logo_black.svg";
 // 질문 컴포넌트는 인덱스의 마지막에 도달 했을 때, 그때까지의 결과를 담아서 최종 결과보기 기능을 구현한다.
 
 //  마지막페이지 메시지 오는 느낌적 느낌으로 만들어야 함
+// test
 
 function QuestionPage() {
   const numberOfQuestions = questionData.length;
@@ -117,15 +118,17 @@ function QuestionPage() {
       case 8:
         document.body.style.backgroundColor = "#0c3758";
         break;
-      case 4:
-        document.body.style.backgroundColor = "#0e2f47";
+      case 9:
+        document.body.style.backgroundColor = "#0E2F47";
         break;
-      case 4:
+      case 10:
         document.body.style.backgroundColor = "#012037";
         break;
-
+      case 11:
+        document.body.style.backgroundColor = "#A2D7FF";
+        break;
       default:
-        console.log("a");
+        return 
     }
   }, [questionIndex]);
 
@@ -152,12 +155,12 @@ function QuestionPage() {
           </div>
 
           <h1 className="question">
-            <img src={questionData[questionIndex].question} alt="" />
+            <img src={questionData[questionIndex].question} alt="mainq" />
           </h1>
 
           <img
             src={questionData[questionIndex].mainImage}
-            alt=""
+            alt="mainImg"
             className="mainImage"
           />
           <div className="optionContainner">
@@ -167,7 +170,7 @@ function QuestionPage() {
                 setMBTIScore(questionData[questionIndex].optionOne)
               }
             >
-              <img src={questionData[questionIndex].optionOneText} alt="" />
+              <img src={questionData[questionIndex].optionOneText} alt="q1" />
             </div>
             <div
               className="optionSelect"
@@ -175,7 +178,7 @@ function QuestionPage() {
                 setMBTIScore(questionData[questionIndex].optionTwo)
               }
             >
-              <img src={questionData[questionIndex].optionTwoText} alt="" />
+              <img src={questionData[questionIndex].optionTwoText} alt="q2" />
             </div>
           </div>
         </div>
