@@ -136,7 +136,7 @@ function QuestionPage() {
   return (
     <div className="question-container" >
       {isFirst ? (
-        <div>
+        <div className="question-area">
           <img
             className="introMessage"
             src={introMessage}

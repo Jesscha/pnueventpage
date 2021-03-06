@@ -142,7 +142,7 @@ body {
   justify-content: center;
   font-family: "Noto Sans KR", sans-serif;
   transition: all 300ms;
-  /* height: 100vh; */
+  /* height: 100vh */
 }
 
 .container {
@@ -164,4 +164,11 @@ body {
 
 a {
   color: black;
+}
+
+#root {
+  position: fixed;
+  /* height: 100vh; */
+  top: 50%;
+  transform: translateY(-50%);
 }
