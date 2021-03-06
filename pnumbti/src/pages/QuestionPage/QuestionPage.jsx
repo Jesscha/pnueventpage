@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link, withRouter } from "react-router-dom";
+import {  withRouter } from "react-router-dom";
 import ProgressBar from "../ProgressBar/ProgressBar.jsx";
 import questionData from "../../asset/qustionData.js";
 import "./QuestionPage.scss";
-import { stringBreak } from "../../utils/utils.js";
+// import { stringBreak } from "../../utils/utils.js";
 import introMessage from "../../asset/intro_message.png";
 import logo from "../../asset/logo_black.svg";
 import whiteLogo from "../../asset/logo_white.svg";
