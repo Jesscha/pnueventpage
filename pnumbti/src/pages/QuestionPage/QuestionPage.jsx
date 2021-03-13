@@ -75,10 +75,11 @@ function QuestionPage({history}) {
     }
 
     // 마지막 페이지면 다음장 가기기능 정지
-    setQuestionIndex(questionIndex + 1);
     if (questionIndex + 1 === numberOfQuestions) {
       setIsLast(true);
     }
+    setQuestionIndex(questionIndex + 1);
+    
   };
 
   const calulateMBTI = () => {
@@ -158,27 +159,39 @@ function QuestionPage({history}) {
 
           <h1 className="question" >
             <img src={questionData[questionIndex].question} alt="mainq" />
-          </h1>
-            <img
+            </h1>
+            
+              <img
                src={questionData[questionIndex].mainImage}
               alt="mainImg"
               className="mainImage"
             
             />
          
+           
           <div className="optionContainner"  > 
             <div
               className="optionSelect"
-              onClick={() =>
-                setMBTIScore(questionData[questionIndex].optionOne)
+                onClick={() =>
+                {
+                  if (questionIndex + 1 === numberOfQuestions) {
+                  document.querySelector('.mainImage').style.display = 'none'
+                  
+                }
+                setMBTIScore(questionData[questionIndex].optionOne)}
               }
+                
             >
               <img src={questionData[questionIndex].optionOneText} alt="q1" />
             </div>
             <div
               className="optionSelect"
-              onClick={() =>
-                setMBTIScore(questionData[questionIndex].optionTwo)
+                onClick={() =>
+                  { if (questionIndex + 1 === numberOfQuestions) {
+                  document.querySelector('.mainImage').style.display = 'none'
+                  
+                }
+                setMBTIScore(questionData[questionIndex].optionTwo)}
               }
             >
               <img src={questionData[questionIndex].optionTwoText} alt="q2" />
@@ -203,7 +216,7 @@ function QuestionPage({history}) {
       )}
 
       <div className="logo">
-        <img src={ (questionIndex > 6 && questionIndex !== 11 )  ? whiteLogo: logo} alt="" />
+        <img src={ (questionIndex > 6 && questionIndex < 11 )  ? whiteLogo: logo} alt="" />
       </div>
     </div>
   );

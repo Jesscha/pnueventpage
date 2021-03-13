@@ -24,9 +24,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 550px;
+    min-height: 400px;
     .question {
       width: 100%;
+      min-height: 140px;
       margin-top: 32px;
       img {
         width: 100%;
@@ -47,6 +48,7 @@
 
       .optionSelect {
         cursor: pointer;
+        min-height: 80px;
       }
       .optionSelect:active {
         transform: scale(0.98);
