@@ -1,10 +1,10 @@
-import React, { } from 'react';
+import React, { useEffect } from 'react';
 
 import { useParams, withRouter } from 'react-router-dom';
 import resultData from '../../asset/resultData';
 import './ResultPage.scss'
-import { stringBreak } from '../../utils/utils';
-
+import { stringBreak } from '../../utils/utils'; 
+import logo from "../../asset/logo_black.svg";
 
 
 // 16가지 결과를 kv로 저장해 놓는다.
@@ -30,12 +30,21 @@ function ResultPage({ history }) {
     return newArr
 
   }
+
+  //     max-height: 100vh;
+  // overflow: scroll;
+  
+  useEffect(() => {
+    document.querySelector('#root').style.cssText = 'max-height: 100vh; overflow-y: scroll; ';
+    document.body.style.backgroundColor = "white";
+    
+  }, [])
   // console.log(allArr)
   // console.log(resultKeys)
   return (
     <div className="resultPage">
-      <div className="logo">
-        pnuu
+       <div className="logo">
+        <img src={ logo} alt="" />
       </div>
       {
         mbti.trim() === "all" ?
@@ -56,10 +65,18 @@ function ResultPage({ history }) {
             }
           </div>
           :
-          <div>
-            <div style={{ width: "100%" }}
+          <div >
+            <div style={{
+              width: "100%",
+              display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center'
+            }}
             >
               <div className="result-head">
+
+                 <img className="resultMainImage"   src={mbtiData.mainImage} alt="" />
+
                 <div
                   className="subText"
                 >
@@ -70,11 +87,49 @@ function ResultPage({ history }) {
                   {mbtiData.nickName}
                 </div>
               </div>
-              {mbtiData.mainImage && <img style={{ width: "100%" }} src={mbtiData.mainImage} alt="" />}
-              <div className="result-main-desc">
-                {stringBreak(mbtiData.mainDesc)}
-              </div>
-              <div className="result-second-desc">
+              <div className="resusltWrapper" style={{ backgroundImage: `url(${mbtiData.bgImage})` }}>
+                <div className="result-main-desc">
+                   {stringBreak(mbtiData.mainDesc)}
+                </div>
+                 <div className="resultContent">
+                    <div className="contentTitle">파티는... </div>
+                    <div className="contents">
+                      {stringBreak(mbtiData.partyType)}
+                    </div>
+
+                    
+                </div>
+                 <div className="resultContent">
+                    <div className="contentTitle">선물은... </div>
+                    <div className="contents">
+                      {stringBreak(mbtiData.presentType)}
+                    </div>
+
+                    
+                </div>
+                 <div className="resultContent">
+                    <div className="contentTitle">당신이 좋아할 선물</div>
+                    <div className="contents">
+                      {stringBreak(mbtiData.presentYouWillLike)}
+                    </div>
+
+                    
+                </div>
+                 <div className="resultContent">
+                    <div className="contentTitle">당신이 싫어할 선물</div>
+                    <div className="contents">
+                      {stringBreak(mbtiData.presentYouWillDislike)}
+                    </div>
+
+                    
+                </div>
+
+                {/* <img className="resultText" src={mbtiData.textImage} alt=""/>
+                 */}
+                {/* <div className="resultText" >
+                  {stringBreak(mbtiData.text)}
+                </div> */}
+              {/* <div className="result-second-desc">
                 <div className="inFriendsBirthDay">
                   <div className="intro">
                     친구 생일에 나는<br /><br />
@@ -89,9 +144,13 @@ function ResultPage({ history }) {
                   </div>
                   {stringBreak(mbtiData.inMyBirthDay)}
                 </div>
+                
 
+              </div> */}
+             
+                
               </div>
-              <div className="result-third-desc">
+               <div className="result-third-desc">
                 <div className="firstText">
                   궁합
                 </div>
@@ -140,6 +199,7 @@ function ResultPage({ history }) {
                 설문하기
 
               </div>
+              
 
 
 
