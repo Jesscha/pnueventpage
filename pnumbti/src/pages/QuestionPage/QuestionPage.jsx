@@ -27,7 +27,35 @@ import whiteLogo from "../../asset/logo_white.svg";
 // 질문 컴포넌트는 인덱스의 마지막에 도달 했을 때, 그때까지의 결과를 담아서 최종 결과보기 기능을 구현한다.
 
 //  마지막페이지 메시지 오는 느낌적 느낌으로 만들어야 함
-// test
+
+
+
+// const imgCache = {
+//   __cache: {},
+//   read(src) {
+//     if (!this.__cache[src]) {
+//       this.__cache[src] = new Promise((resolve) => {
+//         const img = new Image();
+//         img.onload = () => {
+//           this.__cache[src] = true;
+//           resolve(this.__cache[src]);
+//         };
+//         img.src = src;
+//       }).then((img) => {
+//         this.__cache[src] = true;
+//       });
+//     }
+//     if (this.__cache[src] instanceof Promise) {
+//       throw this.__cache[src];
+//     }
+//     return this.__cache[src];
+//   }
+// };
+
+// export const SuspenseImg = ({ src, ...rest }) => {
+//   imgCache.read(src);
+//   return <img src={src} {...rest} />;
+// };
 
 function QuestionPage({history}) {
   const numberOfQuestions = questionData.length;
@@ -175,7 +203,8 @@ function QuestionPage({history}) {
                 onClick={() =>
                 {
                   if (questionIndex + 1 === numberOfQuestions) {
-                  document.querySelector('.mainImage').style.display = 'none'
+                  // document.querySelector('.mainImage').style.display = 'none'
+                  
                   
                 }
                 setMBTIScore(questionData[questionIndex].optionOne)}
@@ -188,7 +217,7 @@ function QuestionPage({history}) {
               className="optionSelect"
                 onClick={() =>
                   { if (questionIndex + 1 === numberOfQuestions) {
-                  document.querySelector('.mainImage').style.display = 'none'
+                  // document.querySelector('.mainImage').style.display = 'none'
                   
                 }
                 setMBTIScore(questionData[questionIndex].optionTwo)}
