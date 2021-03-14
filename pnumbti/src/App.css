@@ -134,6 +134,7 @@ a:active {
 * {
   box-sizing: border-box;
   overflow: visible;
+  word-break: keep-all;
 }
 
 body {

@@ -191,29 +191,111 @@ const resultData = {
 실용적이지 않아도 보관해….귀엽군🐶`
   },
   ENTP: {
-    nickName: "선물계의 지드래곤",
-    nickNameDesc: "네 생일 기다릴거야. 선물 살거야.",
-    mainImage: ``,
-    mainDesc: `호불호가 정확하고 개성이 넘쳐요.
-      좋아하는 것에 누구보다 열정을 많이 쏟고 관심이 갈 때 엄청 시간을 많이 투자해요. `,
-    inFriendsBirthDay: `-‘아 선물 뭐 고르지...’라며 고민하다가 갑자기 다른 일을 해요.
-      -타인에게 관심이 있는 듯 없는 듯 헷갈리지만 결과적으로는 사려깊고 센스있는 선물을 줘요.`,
-    inMyBirthDay: `
-      -주변에 사람들이 많고 인기가 많아서 축하를 많이 받아요.
-      -생일은 의외로 조용하게 보낼 때가 많아요.
-      -매일 매일이 즐거운 사람이지만 생일에 찐으로 행복해하는 모습을 발견할 수 있어요.`,
+    nickName: "🌸🐿다람이🐿🌸",
+    nickNameDesc: "I’m on my way ~ 👉👉️👉️",
+    mainImage: `/img/entp.png`,
+    mainDesc: `️호불호가 정확하고 개성이 넘쳐요.⚡️
+좋아하는 것에 열정을 쏟고 시간을 투자해요.🍻`,
+    
+    presentType: `‘아 선물 뭐 고르지…’하고 찾아보다가 갑자기 다른 일을 해요.🎧(미래의 내가 하겠지. 뭐.)
+
+타인에게 관심이 있는 건지 없는 것인지 헷갈리지만, 결과적으로 센스 있는 선물을 줘요.💫
+
+돈을 쓰고, 선물하는 것 자체가 너무 즐거워요. (뭐라도 하나 더 주고 싶어… 💵💵💵)`,
+    partyType: `워낙 인기가 많아서 생일 축하를 많이 받아요.🎉 (주변 사람은 많지만 인싸와는 거리가 멀다고 생각해요.)
+
+정작 내 생일은 조용하게 보낼 때가 많아요.🌿
+
+파티를 좋아해요. 남의 생일파티를 빼지 않고 잘 참석하는 편이에요.🚗(아 귀찮아도 빠질 수 없지!)
+
+파티에서 새로운 사람들과의 만남을 즐겨요! (어색한 거 못 참아!) 이야기를 주도하고, 말 없는 사람들에게 말 걸기= 주! 특! 기! (“안냐세여. 스펀지밥 닮으셨네여.😏”)
+
+파티에서 제일 많이 한 말 :  “그러게. 내가 말했지.”`,
+    presentYouWillLike: `보드게임, 퍼즐, 수상스키 탑승권, 향수 등 오는 선물 안 막음. 다만 내 취향 저격 선물 = 쓰러짐.
+(나를 잘 알아주는 사람 지독하게 사랑훼…. 💐)`,
+    presentYouWillDislike: `포장만 엄청나게 크고 알맹이는 작은 선물 
+(기만…. hate…🔥)`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: "“🔬🔬자상보스🍯🔬”",
+    fitFriendsDesc: '사소한 것까지 놓치지 않아. Boss 중의 Boss.',
+    fitFriendsImg:'/img/isfj.png',
+    unfitFriendsNickName: "“Vlog 유튜버🎥”",
+    unfitFriendsDesc: '#mood #B-day #일상',
+    unfitFriendsImg: '/img/isfp.png',
+    
+    
+    
+
+    
+    // inFriendsBirthDay: 
+    //   -타인에게 관심이 있는 듯 없는 듯 헷갈리지만 결과적으로는 사려깊고 센스있는 선물을 줘요.`,
+    // inMyBirthDay: `
+    //   -주변에 사람들이 많고 인기가 많아서 축하를 많이 받아요.
+    //   -생일은 의외로 조용하게 보낼 때가 많아요.
+    //   -매일 매일이 즐거운 사람이지만 생일에 찐으로 행복해하는 모습을 발견할 수 있어요.`,
     fitFriendsType: "ISFJ",
-    fitFriendsNickName: "자상보스",
+    // fitFriendsNickName: "자상보스",
 
     unfitFriendsType: "ISFP",
-    unfitFriendsNickName: "브이로그 유튜버",
+    // unfitFriendsNickName: "브이로그 유튜버",
+    text: `파티는...
+워낙 인기가 많아서 생일 축하를 많이 받아요.🎉 (주변 사람은 많지만 인싸와는 거리가 멀다고 생각해요.)
+
+정작 내 생일은 조용하게 보낼 때가 많아요.🌿
+
+파티를 좋아해요. 남의 생일파티를 빼지 않고 잘 참석하는 편이에요.🚗(아 귀찮아도 빠질 수 없지!)
+
+파티에서 새로운 사람들과의 만남을 즐겨요! (어색한 거 못 참아!) 이야기를 주도하고, 말 없는 사람들에게 말 걸기= 주! 특! 기! (“안냐세여. 스펀지밥 닮으셨네여.😏”)
+
+파티에서 제일 많이 한 말 :  “그러게. 내가 말했지.”
+
+선물은…
+‘아 선물 뭐 고르지…’하고 찾아보다가 갑자기 다른 일을 해요.🎧(미래의 내가 하겠지. 뭐.)
+
+타인에게 관심이 있는 건지 없는 것인지 헷갈리지만, 결과적으로 센스 있는 선물을 줘요.💫
+
+돈을 쓰고, 선물하는 것 자체가 너무 즐거워요. (뭐라도 하나 더 주고 싶어… 💵💵💵)
+
+당신이 좋아할 선물
+보드게임, 퍼즐, 수상스키 탑승권, 향수 등 오는 선물 안 막음. 다만 내 취향 저격 선물 = 쓰러짐.
+(나를 잘 알아주는 사람 지독하게 사랑훼…. 💐)
+
+당신이 싫어할 선물
+포장만 엄청나게 크고 알맹이는 작은 선물 
+(기만…. hate…🔥)`
   },
   INFJ: {
-    nickName: "선물계의 고앵이",
-    nickNameDesc: "겉바속촉",
-    mainImage: ``,
+    nickName: "🐈🐈고앵이🐈 🐈",
+    nickNameDesc: "인간 겉바속촉🍪",
+    mainImage: `/img/infj.png`,
     mainDesc: `눈치가 빠르고 감정이 섬세한 따뜻한 사람이에요.
       완벽주의가 있어서 친구 선물을 챙기든, 파티를 기획하든 혼신의 힘을 다해요.`,
+    
+    
+    presentType: `선물을 결정할 때 굉장히 오래 고민하는 편이에요. (난.. 걱정이 많아… 내 선물을 싫어하면 어쩌지….)
+
+몇 년 전에 나눈 대화를 기억해서 선물을 줄 때도 있답니다!🐾(다~ 줄~ 거~~ 야~)
+
+내 사람 챙기는 걸 좋아해서 화려한 선물 전적이 있어요. 셀렉능력 최강!🍿`,
+    partyType: `완벽주의 성향이 강해요! 선물을 챙기든, 파티하든 온 힘을 다해요.🙏(그러다 가끔 기본적인 실수를 하기도 해요. ex. 어 촛불 어디 갔어! 🍰❓)
+
+낯가림이 심한 편이라😳 모르는 사람이 많은 파티를 즐기지 않아요. (눈치 빨라서 불편한 분위기 다 보임 ㅠㅠ 제발 stop)
+
+진짜 좋아하는 사람들과 하는 파티는 극호호호에요. 실내파티보다는 근교 여행을 더 선호해요.🚘
+
+모닥불 피우고 불멍 때리거나, 친구들 이야기를 들으면… 정말 행복할 거예요. 🔥
+
+파티에서 제일 많이 한 말 : …. (끄덕끄덕) 👈공감 왕`,
+    presentYouWillLike: `미술관/공연 입장권, 앨범 선물, 그림 액자 선물, 시집, 손편지, 공동 이름으로 기부하기, 깜짝 선물! (도시락, 여행) `,
+    presentYouWillDislike: `공공장소에서 깜짝 파티하기 (남한테 피해 주는 거 너. 무. 싫. 어. 구. 만. 훼? 👎👎)`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: "“👉갓 물주 👉”",
+    fitFriendsDesc: '생일? 묻고 따블로 가! 🎂🎂',
+    fitFriendsImg:'/img/estp.png',
+    unfitFriendsNickName: "“헤르미온느🚀”",
+    unfitFriendsDesc: '자 빠르게 준비해볼까? 🔫',
+    unfitFriendsImg: '/img/estj.png',
+
     inFriendsBirthDay: `-소중한 사람의 생일 선물을 위해 굉장히 오래 고민하는 편이에요.
       -몇 년 전에 나눈 대화를 기억하여 선물을 줄 때도 있답니다.
       -상대방에게 엄청난 감동을 주는 스타일이에요.`,
@@ -221,35 +303,92 @@ const resultData = {
       -자연 속에서 모닥불 피우며 들리는 ‘타닥타닥’ 소리와 불멍을 좋아해요.
       - 함께하는 그 순간을 소중하게 생각한답니다. `,
     fitFriendsType: "ESTP",
-    fitFriendsNickName: "갓물주",
+    // fitFriendsNickName: "갓물주",
 
     unfitFriendsType: "ESTJ",
-    unfitFriendsNickName: "헤르미온느",
+    // unfitFriendsNickName: "헤르미온느",
   },
   INFP: {
-    nickName: "선물계의 잔나비",
-    nickNameDesc: "너와 나와 우리와 생일",
-    mainImage: ``,
-    mainDesc: `배려심이 깊고 순수한 사람이에요.
-      관계에 있어서는 어느정도 선을 지키는 편이에요. `,
-    inFriendsBirthDay: `-계획적으로 준비하진 않지만, 친구가 정말 행복해할 선물을 주고 싶어 해요. 
-      -고민하다가 결국 물어보고 사는 경우가 많답니다.
-      -상대방의 언박싱 반응에 은근 신경 많이 써요. `,
-    inMyBirthDay: `-받은 선물이나 편지를 보고 친구가 고민한 흔적이 있다면 두고두고 생각하고 고마워해요.
-      -선물을 어떤 마음으로 골랐을지 생각하며 엄청 감동해요.
-      -다음 생일에는 작년 생일을 기억하며 추억에 잠기는 편이에요.`,
+    nickName: "피터팬🦋️",
+    nickNameDesc: "세상 사람들이 모두 우리같다면… 유토피아일텐데",
+    mainImage: `/img/infp.png`,
+    mainDesc: `배려심이 깊고 순수한 사람이에요.🐥🧼
+관계에서는 어느 정도 선을 지키는 편이에요.🌵`,
+    
+    presentType: `친구가 정말 행복해할 선물을 주고 싶어 해요.🍫(특별한 거 없을까ㅠㅠㅠ) 고민하다가 결국 물어보고 사는 경우가 많답니다.👂(친구야…. 혹시 요즘 좀 가지고 싶은 거 있어…? ㅎㅎ)
+
+상대방의 언박싱 반응에 은근 신경을 많이 써요.👀
+
+선물이나 편지를 좋아해요.📬 특히 친구가 고민한 흔적이 엿보이면 두고두고 생각하면서 고마워해요.
+
+친구가 써준 편지를 버리지 않아요. 한곳에 모아놓고 보는 것을 좋아해요.📮(소중해요….☄️☄️☄️)`,
+    partyType: `생일파티 같은 귀여운 이벤트를 좋아해요. 🎉 하지만 여러 명이 즐기는 인싸파티보다는, 친한 친구들과 즐기는 소소한 시간을 사랑해요.☕️
+
+친구들과 추억 팔이 하는 시간을 즐겨요. 사진이나 사건들을 이야기하면서 ‘참 좋았었다’고 회상하곤 해요.📷(아련…..⭐️)
+
+집에 돌아와서 파티 순간들을 되돌아봐요.⏳ 너무 소중하다는 생각에 일기를 쓰기도 하고, 어른이 되기 싫어 괜스레 슬퍼져요.☔️(청춘이란 뭘까…. 인생이란 뭘까….💧💧💧)
+
+파티에서 제일 많이 한 말 : 아 진짜 귀여워(한바탕 찐 웃음😋)`,
+    presentYouWillLike: `소설책, 탄생석 반지, 캔들, 무드등, 좋아하는 드라마 대본집, 손편지, LP/바이닐, 굿즈 등 낭만적인 선물 `,
+    presentYouWillDislike: `달랑 보낸 기프티콘…. (상처) 👉장문의 편지 있으면 OK!`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: "“헤르미온느🚀”",
+    fitFriendsDesc: '자 빠르게 준비해볼까? 🔫',
+    fitFriendsImg:'/img/estj.png',
+
+    unfitFriendsImg:'/img/esfp.png',
+    unfitFriendsDesc: "(이미 노는 중)",
+    unfitFriendsNickName: "“🌈찐셀러브리티✨”",
+    // inFriendsBirthDay: `-계획적으로 준비하진 않지만, 친구가 정말 행복해할 선물을 주고 싶어 해요. 
+    //   -고민하다가 결국 물어보고 사는 경우가 많답니다.
+    //   -상대방의 언박싱 반응에 은근 신경 많이 써요. `,
+    // inMyBirthDay: `-받은 선물이나 편지를 보고 친구가 고민한 흔적이 있다면 두고두고 생각하고 고마워해요.
+    //   -선물을 어떤 마음으로 골랐을지 생각하며 엄청 감동해요.
+    //   -다음 생일에는 작년 생일을 기억하며 추억에 잠기는 편이에요.`,
     fitFriendsType: "ESTJ",
-    fitFriendsNickName: "헤르미온느",
+    // fitFriendsNickName: "헤르미온느",
 
     unfitFriendsType: "ESTP",
-    unfitFriendsNickName: "찐연예인",
+    // unfitFriendsNickName: "찐연예인",
   },
   ENFJ: {
-    nickName: "선물계의 램프요정",
-    nickNameDesc: "내 행복이 네 행복",
-    mainImage: ``,
-    mainDesc: `정이 많고 따뜻한 사람이에요.
-      주변 사람들을 항상 챙겨주려고 한답니다. `,
+    nickName: "👀램프요정💛💙️",
+    nickNameDesc: "소원을 말~해봐~~ 네 행복 = 내 행복",
+    mainImage: `/img/enfj.png`,
+    mainDesc: `정이 많고 따뜻한 사람이에요.🐣
+주변 사람을 항상 잘 챙겨주려고 한답니다.💊`,
+    
+    presentType: `선물을 준비하는 것 자체에 큰 기쁨을 느껴요.🤓(난. 하면. 제대로. 한다.)
+
+상대방의 반응을 보며 행복해해요. 🐈(꼬리 흔들흔들)
+
+항상 받는 것보다 더 주려고 노력하는 사람이에요.🛍(지난번에 얘가 이런 거 줬는데… 아 더 비싸더라도 더 좋은 거 줘야지 😏) 섬세하게 챙겨주며 큰 감동을 준답니다. (고르고 골라…. 최대한 좋은 걸 줘버릴 거야…+편지 필수💌)
+
+친구가 갖고 싶은 게 명확히 보이면, 수단과 방법을 가리지 않고 구하고자 노력하는! 에너지를 가졌어요.⛳️
+`,
+    partyType: `생일보다는 만남 그 자체를 더 중요하게 생각해요.📣
+
+생일파티를 한다면 사람들이 조화롭게 뒤섞일 수 있도록 신경을 쓰는 스타일이에요.🥂
+
+모두가 어색해하지 않고, 좋은 시간을 보낼 방법을 구해와요.🎳(오늘 파티의 식순은 이러합니다.🍽촤락)
+
+파티에서 내 사람들이 행복해한다면, 그것만큼 좋은 게 없어요.🎂️(1분 1짠💧행복의 눈물을 흘린다.)
+
+소중한 친구가 생일파티를 한다면, 시간과 거리를 따지지 않고 최대한 참석하려고 노력해요.🚌🚌
+
+생일을 맞은 친구에게 예쁜 말로 감동을 주는 편이에요.😢 
+(말 한마디로 천 냥 빚을 갚는 스타일~)
+
+파티에서 제일 많이 한 말 : 괜찮아? 필요한 거 있어?🐜`,
+    presentYouWillLike: `마음을 꾹꾹 담은 손편지, 즉석카메라, 책 선물, 나를 생각한 티가 나는 선물.`,
+    presentYouWillDislike: `대~~충 허겁지겁 산 선물 + no 편지 (고냥… 조금 그래…. 엉… 그래 좀… 그래…….)`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: "“돌멩이😪💤”",
+    fitFriendsDesc: '파티를 빠진게 죄는 아니잖아!!!',
+    fitFriendsImg:'/img/istp.png',
+    unfitFriendsNickName: "“⛑유교girl(boy)~🙏”",
+    unfitFriendsDesc: 'K-생일파티란 말이다… 🐜🐜',
+    unfitFriendsImg: '/img/istj.png',
     inFriendsBirthDay: `-선물을 준비하는 것 자체에 큰 기쁨을 느껴요.
       -상대방의 반응을 보며 행복해해요.
       -항상 받는 것보다 더 주고 섬세하게 챙겨주며 큰 감동을 준답니다.`,
@@ -257,17 +396,44 @@ const resultData = {
       -만약 생일파티를 한다면 사람들이 조화롭게 놀고 있는지 계속 확인해요.
       -모든 사람을 잘 챙겨주는 따뜻한 사람이랍니다. `,
     fitFriendsType: "ISTP",
-    fitFriendsNickName: "돌덩이",
+    // fitFriendsNickName: "돌덩이",
 
     unfitFriendsType: "ISTJ",
-    unfitFriendsNickName: "공무원",
+    // unfitFriendsNickName: "공무원",
   },
   ENFP: {
-    nickName: "선물계의 올라프",
-    nickNameDesc: "헤헷 찡긋^.~",
-    mainImage: ``,
+    nickName: "올라프⛄",
+    nickNameDesc: "🌈🌈사랑은 열린 문~~~🦄🦄",
+    mainImage: `/img/enfp.png`,
     mainDesc: `활기가 넘치고 열정적이에요.
       사는게 종종 힘들다는 생각도 하지만 긍정적으로 잘 이겨내는 편이에요. `,
+    
+    presentType: `매력적인 선물로 주변에 감동을 많이 주는 사람이에요.🌈️(수제 쿠키, 수제청 등 직접 선물을 만들기도 해요!) 
+
+조그맣고 귀여운 선물들도 좋아하는 편이에요.🌻(눈물 줄줄 우리 집에 가자💧)
+
+생일이 아니어도 주변 사람들에게 자주 선물하는 편이에요.👛 (엉. 사랑에 돈 아끼는 거 아냐💓💓💓+가끔 친구 선물 사다가 내 것도 삼.ㅋㅋ)`,
+    partyType: `깜짝+비밀 파티를 해주면 너무너무 행복해서 물구나무선 채로 울어버릴지도 몰라요.💧💧💧️ 이날을 ‘나의 날’로 선포하고 모든 퍼포먼스를 해낼 수 있어요.🎨 
+
+상대방을 기쁘게 해주는 타고난 능력을 갖췄어요. 세심하게 파티를 주선해요.❄️ (오늘~ 너희 집에서~ 파티가 열릴 거야~)
+
+지루한 파티는 싫어해요. 재밌고, 신나고, 귀여운 것들로 가득한 파티를 꾸밀 거예요.🎈🎉🎊(no 멋 = no 파티)
+
+생일파티에 초대받는 것을 좋아해요.💜🦄  참석하지 못하게 되면 고통스러워해요. (내가…. 이래…. 살아야 하나..)
+
+하지만 늘 핵인싸 생일파티만 즐기는 건 아니에요. 깊은 이야기를 할 수 있는 시간도 좋아해요.🐋
+
+파티에서 제일 많이 한 말 : 아 진짜ㅠㅠㅠㅠ 감사해요ㅠㅠㅠㅠㅠ (눈물 줄줄 : 이미 울고 있음💧)`,
+    presentYouWillLike: `예쁘게 포장된 선물 + 장문의 편지 (포장지마저 아름다워… 감동적이야 흑 👉 포장 뜯으며 행복 폭발 👉긴 편지를 읽다가 마음이 100℃가 됨. 따숩. 여기가… 열대지방인가요? 왜 이리 따숩죠?)`,
+    presentYouWillDislike: `없음. 다 좋아요! (지루한 선물은 조금 감동이 덜하긴 하지만요.)`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: "“⛑유교girl(boy)~🙏”",
+    fitFriendsDesc: 'K-생일파티란 말이다… 🐜🐜',
+    fitFriendsImg: '/img/istj.png',
+    unfitFriendsNickName: "“돌멩이😪💤”",
+    unfitFriendsDesc: '파티를 빠진게 죄는 아니잖아!!!',
+    unfitFriendsImg:'/img/istp.png',
+    
     inFriendsBirthDay: `-지루한 것을 싫어해요.
       -항상 새로운 것에 열정을 느껴요.
       -준비하는 선물도 매력적이에요.
@@ -276,51 +442,132 @@ const resultData = {
       -상대방을 기쁘게 해주는 타고난 능력이 있어요.
       -주변에 따르는 사람들이 많아요.`,
     fitFriendsType: "ISTJ",
-    fitFriendsNickName: "공무원",
+    // fitFriendsNickName: "공무원",
 
     unfitFriendsType: "ISTP",
-    unfitFriendsNickName: "돌덩이",
+    // unfitFriendsNickName: "돌덩이",
   },
   ISTP: {
-    nickName: "선물계의 돌덩이",
-    nickNameDesc: "취향 확실한",
-    mainImage: ``,
-    mainDesc: `혼자 잘 지내고 집에서 혼자 할 일이 되게 많아요.
-      다른 사람에게 대체적으로 관심이 적은 편이에요. `,
+    nickName: "돌멩이😪💤",
+    nickNameDesc: "파티를 빠진게 죄는 아니잖아!!!🗿🗿",
+    mainImage: `/img/istp.png`,
+    mainDesc: `누구보다 혼자 잘 지내고, 집에서
+혼자 할 일이 되게 많아요.🤠
+다른 사람에 관한 관심이 대체로 적은 편이에요.👻`,
+    
+    presentType: `선물을 안 주는 줄 알았는데, 예측을 깨고 챙겨주는 스타일이에요.✨
+
+깜짝 선물에 대한 기대가 적어요. (굳이 서프라이즈….?) 취향이 확고하고, 호불호가 분명한 스타일이에요.🧩
+
+누군가 선물을 준다면 그냥 직접 물어보고 줬으면 하는 생각을 해요.👂`,
+    partyType: `왁자지껄한 파티를 선호하지 않아요.❌❌❌
+
+좋은 곳에서 가까운 사람들과 시간 보내는 것을 좋아해요.누구보다 행복하지만, 티가 잘 안 나요. (나는 행복한데 머선일이고….?) 
+
+안읽씹 최강이라 파티초대장을 늦게 확인할 가능성이 커요.💬(미리 보기로 슬쩍 보고 이마짚… 하…😑) 그래도 가까운 친구들은 잘 챙기려고 노력해요.
+
+감정이 잘 드러나지 않아서, 파티에서 보이는 모습이 진짜인지 아닌지 잘 몰라요.🌜🌛
+
+파티에서 제일 많이 한 말 : 하하하 (마음에 없는 소리 하느니 그냥 웃는 게 나음😀)`,
+    presentYouWillLike: `의식주에 해당하는 것들, 전자기기 등 다시 말해 실용성이 높은 선물!`,
+    presentYouWillDislike: `예쁜 쓰레기 🔮 (하하… 고마워….. 😐 (속마음 : 이런 걸… 왜….? 어디에 써야 할까…))`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: "“👀램프요정💛💙️”",
+    fitFriendsDesc: '소원을 말~해봐~~ 네 행복 = 내 행복 ',
+    fitFriendsImg:'/img/enfj.png',
+    unfitFriendsNickName: "“올라프⛄”",
+    unfitFriendsDesc: '🌈🌈사랑은 열린 문~~~🦄🦄',
+    unfitFriendsImg: '/img/enfp.png',
     inFriendsBirthDay: `-감정을 잘 드러내지 않아요.
       -선물 안줄줄 알았는데 예측을 깨고 챙겨주는 스타일이에요.
       -안읽씹 최강이지만 가까운 친구들은 생각하는 것 같긴 해요. `,
     inMyBirthDay: `-좋은 곳에서 가까운 사람들과 행복한 시간을 보냈지만 잘 티가 안나요. 
       -취향이 확고하므로 누군가가 선물을 준다면 직접 물어보고 줬으면 하는 생각을 해요.`,
     fitFriendsType: "ENFJ",
-    fitFriendsNickName: "램프요정",
+    // fitFriendsNickName: "램프요정",
 
     unfitFriendsType: "ENFP",
-    unfitFriendsNickName: "울라프",
+    // unfitFriendsNickName: "울라프",
   },
   ISTJ: {
-    nickName: "선물계의 공무원",
-    nickNameDesc: "성실 성실 열매",
-    mainImage: ``,
-    mainDesc: `성실하고 계획적인 성격이에요.
-      상식에 따라 사는걸 좋아해요. `,
+    nickName: "⛑유교girl(boy)~🙏",
+    nickNameDesc: "K-생일파티란 말이다… 🐜🐜",
+    mainImage: `/img/istj.png`,
+    mainDesc: `성실하고 계획적인 성격이에요. 🐜
+상식에 따라 사는 것을 좋아해요. 🐜 🐜`,
+    
+    presentType: `생일선물을 꾸준히 잘 챙기는 편이에요.🛍
+
+생일선물은 ‘역시 케이크지’하고 생각하거나, 실패 확률이 적은 선물을 고르는 편이에요.🌷(취향 타는 선물 노노, 경험에서 우러나온 데이터 신뢰도가 높은 편👾👾)
+
+선물 예산을 미리 계산해놓거나, 빼놓는 편이에요. (흐음 이번 달 생일이 5명이네… 타격이 크겠어🥊)
+`,
+    partyType: `파티를 한다면 평범하고 무난하게 하는 편이에요. (생일노래+케이크 정도…? 이유 없이 늘어지는 파티를 싫어해요.)🎼🎂특별한 파티에 집착하는 편은 아니에요.🎷❌
+
+생일 알림을 부담스러워해요. (알림 끌까…?)🔕
+
+그래도 축하해준 친구들에게 진심으로 고마워해요.🙏(나는 따뜻하고 책임감 있는 마음의 소유자니까요! 🐝) 
+
+파티 준비를 맡으면 책임감을 느끼고 열심히 계획해요. 한번 맡은 일은 완벽하게 해내는 사람이거든요.🤝
+
+낯가림이 있는 편이라 모르는 사람이 많은 파티를 선호하지 않아요. ❌
+
+파티가 끝나고 정리정돈을 한다면, 나서서 돕는 사람 중 한 명이에요. (같이 치우자 👉이미 손은 치우고 있음.)
+
+파티에서 제일 많이 한 말 : 고마워 애들아 (따뜻한 웃음😀)`,
+    presentYouWillLike: `케이크, 기프티콘 등등 🎂`,
+    presentYouWillDislike: `가성비가 떨어지는 선물, 예쁜 쓰레기`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: "“올라프⛄”",
+    fitFriendsDesc: '🌈🌈사랑은 열린 문~~~🦄🦄',
+    fitFriendsImg: '/img/enfp.png',
+    unfitFriendsNickName: "“👀램프요정💛💙️”",
+    unfitFriendsDesc: '소원을 말~해봐~~ 네 행복 = 내 행복 ',
+    unfitFriendsImg:'/img/enfj.png',
+  
     inFriendsBirthDay: `-꾸준히 선물을 잘 챙겨줘요.
       -따뜻하고 책임감 있는 마음의 소유자에요.
       -'생일 선물은 케이크지'라고 생각하거나 실패 확률이 적은 선물을 고르는 걸 좋아해요. `,
     inMyBirthDay: `-나의 생일 알림을 끄는 것을 고민해본적 있어요.
       -축하해주는 모든 마음을 진심으로 정말 정말 고마워해요. `,
     fitFriendsType: "ENFP",
-    fitFriendsNickName: "울라프",
+    // fitFriendsNickName: "울라프",
 
     unfitFriendsType: "ENFJ",
-    unfitFriendsNickName: "램프요정",
+    // unfitFriendsNickName: "램프요정",
   },
   ISFJ: {
-    nickName: "선물계의 자상보스",
-    nickNameDesc: "사소한 것까지 기억하는",
-    mainImage: ``,
+    nickName: "🔬🔬자상보스🍯🔬",
+    nickNameDesc: "사소한 것까지 놓치지 않아. Boss 중의 Boss.",
+    mainImage: `/img/isfj.png`,
     mainDesc: `자상한 성격으로 평화를 가장 중요하게 생각해요.
-      호의를 잘 베풀지만 관계에 있어서 예의를 중시하는 편이에요. `,
+호의를 베풀지만, 관계에서 예의를 중시해요.
+(좌우명 : 선. 넘지 말고 넘게 두지도 말자!)`,
+    
+    presentType: `친구의 사소한 것까지 기억하면서 선물을 준비해요. 친구에게 감동을 주는데 도가 텄어요. (음 뭐를 좋아하더라🤔전에 이야기할 때 이런 거 좋아한다 했지!)
+
+검색은 필수!👌 가격대를 얼마로 할지 미리 결정하는 것도 필수예요.🤳 (#20대 여자 선물, #2만 원 대 선물)
+
+헉! 디자인 ok👉후기(⭐️⭐️⭐️⭐️⭐️) 완벽 👉할인(60%)⁉️ 3박자가 모두 완벽한 선물을 발견하면 바로 결제 고고에요. (아 이 정도면 최고야. 짜릿해.)`,
+    partyType: `세네 명이 소소하게 만나는 파티를 선호해요.👨‍👦‍👦👩‍👧‍👧 (분위기 좋은 음식점에서 우리끼리 보내는 파티… 난 그걸로 충분해💓) 
+
+친구와의 파티만큼이나 가족과의 시간을 중요하게 생각해요! (Home🏡 sweet🍯 Home🏡~)
+
+분위기 좋은 곳을 좋아하고, 찾는 것도 좋아해요! 감각도 있어요! (aka. 인간 mood. 파티장소는 나에게 맡기라! #검색왕)
+
+집으로 돌아가서 나이 먹음을 통탄하는 일기를 써요. (오늘의 일기 : 와 내가 벌써 이 나이라니. 시간 무엇? ㅠㅠ)
+
+파티에서 제일 많이 한 말 : 에이 아냐 🙈(발그레💜) 👉친구들 칭찬에 매우 기쁘지만 부끄러워하는 중 (속으로 좋아서 죽음)`,
+    presentYouWillLike: `좋아하는 친구들과 같이 노는 시간 (물건만큼이나… 추억이 중요하다고 생각해요🐣)`,
+    presentYouWillDislike: `의도를 모르겠는 선물 (갑자기…? 뜬금없이 나한테… 이걸 왜 준걸까… 무슨 의도지? 헉 나 뭔가 잘못했나….? 
+ㅜ_ㅜ 뭐야 왜 준거지…🐡)`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: "“🌸🐿다람이🐿🌸”",
+    fitFriendsDesc: ' I’m on my way ~ 👉👉️👉️',
+    fitFriendsImg:'/img/entp.png',
+    unfitFriendsNickName: "“🔥🔥You know… 윤호🔥🔥”",
+    unfitFriendsDesc: '어~ 그래 케이크만 사 올래?🍰',
+    unfitFriendsImg: '/img/entj.png',
     inFriendsBirthDay: `-게으른 완벽주의자에요!
       -친구의 사소한 것까지 기억하면서 선물을 준비해요.
       -상대방에게 감동을 주는 데 도가 텄어요.`,
@@ -328,34 +575,88 @@ const resultData = {
       -분위기 좋은 곳을 찾는 것 좋아하고 센스가 있어요. 
       -가족들과의 시간도 굉장히 중요한 편이에요.`,
     fitFriendsType: "ENTP",
-    fitFriendsNickName: "지드래곤",
+    // fitFriendsNickName: "지드래곤",
 
     unfitFriendsType: "ENTJ",
-    unfitFriendsNickName: "유노윤호",
+    // unfitFriendsNickName: "유노윤호",
   },
   ESFJ: {
-    nickName: "선물계의 나이아가라폭포",
-    nickNameDesc: `콰ㅏ콸왈`,
-    mainImage: ``,
-    mainDesc: `다른 사람에 대한 배려가 정말 정말 깊어요.
-      공감도 잘해서 주변에 마음을 많이 주는 편이에요.`,
+    nickName: "나이아가라폭포🌊",
+    nickNameDesc: `아아 지금은 생파중~ 연락 안됩니다~📞🚫`,
+    mainImage: `/img/esfj.png`,
+    mainDesc: `다른 사람에 대한 배려가 정말 정말 깊어요
+공감능력 왕!👑👑👑
+주변에 마음을 많이 주는 편이에요.🍑`,
+    
+    presentType: `관계의 소중함을 누구보다 잘 알고, 선물도 잘 챙겨줘요.💐 (상대가 뭘 필요로 하는지 잘 알아채는 편이에요!)
+
+선물을 주고, 선물 받은 사람을 보며 행복해하는 스타일이에요. (흐뭇하다. 정말 🥳~)
+
+친구가 선물 보답을 하지 않으면 조금 기분이 안 좋아지는 편이니, 다들 잘 챙겨줬으면 좋겠어요! 우정도, 사랑도, 쌍방통행이잖아요…?😽(상처받아도 ㅠㅠ 배려하느라 먼저 이야기 못 한단 말이에요 ㅠㅠㅠ)`,
+    partyType: `친구들이 많은 당신. 하지만 생일은 가장 친한 무리의 친구들과 보내는 스타일이에요.🍭 (애들아 모여!!!)
+
+마음만 먹으면 10시간 파티도 가능해요.🌙 노는거 최고야!!! (오늘 일단 밥 먹고, 카페 갔다가, 우리 집 가서 2차 파티하고, 사진 찍고, 영화 보고, 진실게임하고, 마피아하고 OK? 가능?)
+
+가장 최악은… 친구들이 내 생일에 간소하게 하자고 하거나, 생략하는 거에요. 특히 내 생일을 잊으면 파국이 시작돼요…. 나… 인생 헛살았다?⛈(눈물 한 바가지+이미 입꼬리 내려감)
+
+모르는 사람과의 파티도 자신 있어요. 어색한 분위기요?💣 걱정 마세요! 정 많고! 사람 잘 파악하는 제.가. 있. 잖.아. 요.
+(저…. 저기요. 00이 친구세요? 아 진짜요? 까르륵 하하 저희 말 편하게 할까요? 그러자 그러자 🏹)
+
+파티에서 제일 많이 한 말 : 흐하하하하💫 혹은 엉엉☔️`,
+    presentYouWillLike: `꾹꾹 눌러쓴 손편지 + 화려하게 포장된 선물과 꽃다발 (꾸민 티가 나면? love love❣️)`,
+    presentYouWillDislike: `없음. 아 너무 감동적인 선물? (눈물을 멈출 수 없으니까 ㅠㅠㅠ 책임져 ㅠㅠㅠㅠㅠ A4 10장짜리 감사문을 써주겠어💧)`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: " “자발적 아싸😈”",
+    fitFriendsDesc: '철이 없었죠... 생파가 싫어서 유학을 갔다는 게',
+    fitFriendsImg:'/img/intp.png',
+    unfitFriendsNickName: " “✍🏻데카르트✍🏻”",
+    unfitFriendsDesc: '파티란 무엇인가…생일이란 무엇인가… ',
+    unfitFriendsImg: '/img/intj.gif',
     inFriendsBirthDay: `-사랑이 정말 많은 사람이에요.
       -관계의 소중함을 누구보다 잘 알아요. 
       -좋아하는 당신의 모습을 보며 미소를 지으며 행복해 한답니다. (흐-뭇)`,
     inMyBirthDay: `-생일파티를 연다면 정말 완벽한 파티를 만들어요. 
       -친한 친구들이 자기 생일 축하를 생략하거나 선물 보답을 안 하면 삐지니까 잘 챙겨주세요♥`,
     fitFriendsType: "INTP",
-    fitFriendsNickName: "자발적 아싸",
+    // fitFriendsNickName: "자발적 아싸",
 
     unfitFriendsType: "INTJ",
-    unfitFriendsNickName: "츤데레",
+    // unfitFriendsNickName: "츤데레",
   },
   ISFP: {
-    nickName: "선물계의 브이로그 유튜버",
-    nickNameDesc: `산뜻하고 포근포근한`,
-    mainImage: ``,
-    mainDesc: `조용하고 부드러운 성격을 가지고 있어서 화를 잘 안내요.
-      가족, 친구들을 잘 챙겨주고 섬세해요. `,
+    nickName: "Vlog 유튜버🎥",
+    nickNameDesc: `#mood #B-day #일상`,
+    mainImage: `/img/isfp.png`,
+    mainDesc: `조용하고 부드러운 성격을 가지고 있어요.🍦
+평소 화도 잘 안 내는 편.❌
+가족과 친구들을 잘 챙겨주는 섬세함을 가졌어요.🧸`,
+    
+    presentType: `자신 없어 하면서 선물을 건네지만, 굉장히 좋은 선물을 주는 사람이에요.🎁
+
+사소한 것도 잘 챙겨주는 사람이라, 따뜻하다는 이야기를 많이 들어요.❣️
+
+친구가 준 편지에 예상치 못한 칭찬이 쓰여 있으면 온종일 생각나요.💌 (허허…. 허허허… 허허)`,
+    partyType: `집에서 혼자 ‘나 자신아, 생일 축하해’ 하고 가상의 촛불을 불 스타일이에요.🎂 (마법사의 돌 Happy birthday Harry 재질)
+
+하지만 케이크를 든 친구가 쳐들어올 가능성이 커요.️🎂
+
+사소한 것을 잘 챙겨주는, 츤데레 스타일의 생일파티를 좋아해요.🏓(헤엑 이~게 뭐야아~?👀)
+
+생일 전에는 기대를 많이 하지만, 막상 생일 당일에는 팍 식어버려요. (아… 귀찮은데…. 나가지 말까?💘🏠️)
+
+하지만 생일을 혼자 보내지는 않아요.🎂💧❌ 생일에 혼자인 건 너무 슬픈 일이니까요. 내 케이크를 내가 산다고 상상하면…💧💧💧 잠깐만요 자꾸 눈물이 나네요. ㅠㅠㅠ
+
+파티에서 제일 많이 한 말 : 아무거나… 오 그거 괜춘… (의견 말하는 거 귀찮아… 그냥 R아서 해줘…🌞️)`,
+    presentYouWillLike: `푹신푹신한 바디 필로우, 미술 도구(페인팅 키트), DIY 물품 등 혼자만의 시간을 풍요롭게 만들어 줄 것들. 🤟🤟`,
+    presentYouWillDislike: `다이어리, 플래너 👉어차피 끝까지 못 써요….`,
+    bgImage: "/img/bg_box.png",
+    unfitFriendsNickName: "“🌸🐿다람이🐿🌸”",
+    unfitFriendsDesc: ' I’m on my way ~ 👉👉️👉️',
+    unfitFriendsImg:'/img/entp.png',
+    fitFriendsNickName: "“🔥🔥You know… 윤호🔥🔥”",
+    fitFriendsDesc: '어~ 그래 케이크만 사 올래?🍰',
+    fitFriendsImg: '/img/entj.png',
+   
     inFriendsBirthDay: `-자신 없어 하면서 선물을 건네지만, 굉장히 좋은 선물을 줘요.
       -사소한 것도 잘 챙겨주는 따뜻한 사람이에요.
       -하지만 평소에 뭐 하고 사는지 제보가 필요합니다.`,
@@ -363,35 +664,91 @@ const resultData = {
       -그래서 케이크를 든 친구가 쳐들어올 가능성이 커요.
       -개인적인 영역을 존중해주면서 사소한 것은 잘 챙겨주는 츤데레 스타일의 생일 파티를 좋아한답니다.`,
     fitFriendsType: "ENTJ",
-    fitFriendsNickName: "유노윤호",
+    // fitFriendsNickName: "유노윤호",
 
     unfitFriendsType: "ENTP",
-    unfitFriendsNickName: "지드래곤",
+    // unfitFriendsNickName: "지드래곤",
   },
   ESFP: {
-    nickName: "선물계의 찐연예인",
-    nickNameDesc: `귀염뽀짝`,
-    mainImage: ``,
-    mainDesc: `인생이 너무 즐거워요. 
-      사람들이 너무 좋아요. 영어에서 PEOPLE PERSON이 딱 나에요.`,
+    nickName: "🌈찐셀러브리티✨",
+    nickNameDesc: `(이미 노는 중)`,
+    mainImage: `/img/esfp.png`,
+    mainDesc: `인생은 즐거워! Viva 마이 라이프!🌻
+사람들이 좋아요.👨👨👨👨👨
+PEOPLE PERSON(피플펄슨), 나잖아?!🦜`,
+    
+    presentType: `작은 선물에도 감동을 잘 받고 행복해해요.😉(어머 뭐 이런 걸 줘요. ㅠㅠ)
+
+선물 검색하면서 뭐가 좋을지 굉장히 고민하는 편이에요. 고민에 비해 빠르게 결정하는 편은 아니에요.🐌 (아 맞다 생일 선물 줘야 되는데… 뭐 주지 n번 반복)
+
+인터넷 검색과 친구 취향을 분석하여 똑똑하게 정해요.🎁 (#요즘핫한선물 #친구선물)
+
+귀가 얇은 편이에요. 주변 이야기를 듣고 선물을 슬쩍 바꿀 때도 잦아요.👀`,
+    partyType: `텐션이 높고 누구보다 즐겁게 파티를 즐겨요.🎉🎉🎉
+
+즉흥적이고 흥부자여서 주변 사람들을 즐겁게 하는 능력자예요.💃 규모와 상관없이, 즐거운 분위기를 만들어내요.
+
+파티에서 주목받는 것을 좋아해요! 🎤👩‍🎤 하지만 티 내지는 않아요. 
+
+함께 시간을 보내는 걸 좋아하고, 약속을 피하지 않아서 여러 번 생일파티를 하기도 해요.🤩
+
+생일 축하한다는 연락을 많이 받는 편이에요!📲(전화에서 불남🔥🔥🔥)
+
+파티에서 제일 많이 한 말 : 아이 뭘 이 정도쯤이야~~~👉친구들의 칭찬 + 시선에 반응하는 중`,
+    presentYouWillLike: `오는 선물 안 막음 (고마워🙂) + 내가 필요한 사람들의 연락📱️ (아~ 너 없이 파티를 어떻게 해… 그게 무슨 소용이야 ㅠ 너 안 오면 나도 안 갈래)`,
+    presentYouWillDislike: `보석십자수 키트 (하 지루해 ㅠㅠ)`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: "“⛑유교girl(boy)~🙏”",
+    fitFriendsDesc: 'K-생일파티란 말이다… 🐜🐜',
+    fitFriendsImg: '/img/istj.png',
+    unfitFriendsNickName: " “자발적 아싸😈”",
+    unfitFriendsDesc: '철이 없었죠... 생파가 싫어서 유학을 갔다는 게',
+    unfitFriendsImg:'/img/intp.png',
     inFriendsBirthDay: `-선물 검색하면서 뭐가 좋을지 굉장히 고민하는 편이에요. 근데 결정하는게 빠르지는 않아요. 
       -인터넷 검색과 친구 취향 분석을 조합하여 스마트하게 정해요.`,
     inMyBirthDay: `-즉흥적이고 흥부자라서 주변 사람까지 즐겁게 만드는 능력자에요. 
       -작은 선물에도 감동을 잘 받고 행복해해요. 
       -텐션이 굉장히 높고 생일을 누구보다도 즐겁게 보내요.`,
     fitFriendsType: "INTJ",
-    fitFriendsNickName: "츤데레",
+    // fitFriendsNickName: "츤데레",
 
     unfitFriendsType: "INTP",
-    unfitFriendsNickName: "자발적 아싸",
+    // unfitFriendsNickName: "자발적 아싸",
   },
 
   ESTP: {
-    nickName: "선물계의 갓물주",
-    nickNameDesc: `F-L-E-X`,
-    mainImage: ``,
-    mainDesc: `일단 화끈해요. 그리고 표현도 잘해요.
-      사람들이 예측할 수 없다고 하는데 그게 다 매력있다는 소리에요. `,
+    nickName: "👉갓 물주 👉",
+    nickNameDesc: `생일? 묻고 따블로 가! 🎂🎂`,
+    mainImage: `/img/estp.png`,
+    mainDesc: `일단 화끈해요.🔥🔥🔥 표현도 잘해요.🔥🔥
+사람들은 날 예측할 수 없대요.
+근데 그게 다 매력 있다는 소리 아닌가요?👀`,
+    
+    presentType: `고가의 선물을 잘하는 편이에요.💵(멋죽멋살)
+
+인생은 한 번이라는 생각으로 생일을 짜릿하게 챙기는 편이랍니다.💫(한번 사는 인생. 깊게 생각하지 말자! 고!)
+
+센스 있는 선물을 좋아해요. 특히 나를 기운 나게 하는 선물들. 최고입니다.👀🤖🎁`,
+    partyType: `정말 특이하고 화려한 파티를 열 거예요.🦋🦐🐥🎉💛️(또 파티 한~번 해줘야! 찐 생일!)
+
+생일에 새로운 경험을 하는 것을 좋아해요. 특이한 이벤트도 모두 환영해요.🤠🤠🤠
+
+하지만 방심은 금물. 파티에서도 선은 지키는 이성적인 면모가 공존한답니다.🔐
+
+생일 당일에 건드리지 마세요. 이날 한정 난 무적이니까. (누구도 그들을 막을 수 없다💣💣💣)
+
+멋죽멋살. 멋에 죽고 멋에 사는 사람은, ‘가성비’ 생각하는 거 아.니.에.요.🖐🖐모두가 부러워할 Place에서 사진 한 장 찍어줘야 ~ 진짜 생일 아닌가요?
+
+파티에서 제일 많이 한 말 : 생일인데 그냥 하자! 시켜! 사! 고!`,
+    presentYouWillLike: `백화점 상품권, 요즘 SNS에서 핫한 아이템, 보석, 깜짝여행!💍💎💙`,
+    presentYouWillDislike: `선물은 다 좋아요!🎀`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: "“🐈🐈고앵이🐈 🐈”",
+    fitFriendsDesc: '인간 겉바속촉🍪',
+    fitFriendsImg:'/img/infj.png',
+    unfitFriendsNickName: "“피터팬🦋️”",
+    unfitFriendsDesc: '세상 사람들이 모두 우리같다면… 유토피아일텐데 ',
+    unfitFriendsImg: '/img/infp.png',
     inFriendsBirthDay: `센스가 있어서 다양한 경험을 주길 원해요. 
       -고가의 선물을 잘하는 편이에요.
       -인생은 한 번이라는 생각으로 생일을 짜릿하게 챙겨주는 편이랍니다.`,
@@ -399,18 +756,43 @@ const resultData = {
       -파티를 열면 정말 특이하고 화려한 파티를 열거에요. 
       -하지만 파티에서 선은 지키는 이성적인 면모가 공존한답니다. `,
     fitFriendsType: "INFJ",
-    fitFriendsNickName: "고앵이",
+    // fitFriendsNickName: "고앵이",
 
     unfitFriendsType: "INFP",
-    unfitFriendsNickName: "잔나비",
+    // unfitFriendsNickName: "잔나비",
   },
 
   ESTJ: {
-    nickName: "선물계의 헤르미온느",
-    nickNameDesc: `하나부터 열까지 다 널 위한 소리`,
-    mainImage: ``,
-    mainDesc: `솔직하고 뭐든지 잘하는 만능엔터테인먼트에요.
-      선물과 관계에 있어서 모두 호불호가 정확해요. `,
+    nickName: "헤르미온느🚀",
+    nickNameDesc: `자 빠르게 준비해볼까? 🔫`,
+    mainImage: `/img/estj.png`,
+    mainDesc: `솔직하고 뭐든지 잘하는
+만능엔터테인먼트에요.🎻
+선물과 관계에서 모두 호불호가 정확해요.🦉`,
+    
+    
+    presentType: `센스있는 선물을 주며 행복하게 만들어줄 유형이에요.🎅(난 절대 실패하지 않아.)
+
+친구들을 찐으로 위하고 표현도 잘하는 편이에요.☁️ (애들아 운동해야 돼. 내가 운동복 사줄게. 다들 8시에 00 공원으로 나와🌳 / 애들아 건강한 음식 먹어야 해. 내가 친환경 밀키트 보냈어. 다들 아침 먹고 다녀.🥑)`,
+    partyType: `파티를 한다면 누구보다 섬세하게 모든 것을 계획해서 완벽하게 진행해요. 헤르미온느급이에요.📒📚(촥촥촥)
+
+파티의 예산과 시간, 장소 등을 정확하게 파악해서 전체에 맞게 조정해요.👩‍💻👨‍💻(계획이 틀어지는 건 딱 질색!)
+
+완벽한 계획으로, 친구가 가장 좋아하는 식당으로 데려갈 거에요.🍽(이미 예약 완료!)
+
+친구들과의 파티도, 가족과의 시간도 놓치지 않는 타입!🤙
+
+시간약속은 생명이에요… 제발 파티 시간을 지켜주세요… stress.. ⏰⏱⌚️🕰🕓`,
+    presentYouWillLike: `다 좋아요. 괜찮아요! 감사해요!🎂`,
+    presentYouWillDislike: `맛집에서 줄 서서 기다렸다가 밥 먹기🍲 (예약… 안 했어….? 아… 안된대….?💧)`,
+    bgImage: "/img/bg_box.png",
+    fitFriendsNickName: "“피터팬🦋️”",
+    fitFriendsDesc: '세상 사람들이 모두 우리같다면… 유토피아일텐데 ',
+    fitFriendsImg: '/img/infp.png',
+    unfitFriendsNickName: "“🐈🐈고앵이🐈 🐈”",
+    unfitFriendsDesc: '인간 겉바속촉🍪',
+    unfitFriendsImg:'/img/infj.png',
+   
     inFriendsBirthDay: `-완벽한 계획으로 생일에 친구가 가장 좋아하는 식당으로 데려갈거에요.
       -센스있는 선물을 주며 행복하게 만들어줄 유형이에요.
       -섬세하게 모든 것을 계획하여 완벽하게 진행해요. 헤르미온느 급이에요. `,
@@ -418,10 +800,10 @@ const resultData = {
       -내 생일에 온 친구들에게 엄청나게 고마워해요.
       -친구들을 찐으로 사랑하고 표현도 잘하는 편이에요. `,
     fitFriendsType: "INFP",
-    fitFriendsNickName: "잔나비",
+    // fitFriendsNickName: "잔나비",
 
     unfitFriendsType: "INFJ",
-    unfitFriendsNickName: "고앵이",
+    // unfitFriendsNickName: "고앵이",
   },
 };
 
