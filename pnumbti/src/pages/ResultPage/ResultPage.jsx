@@ -38,7 +38,13 @@ function ResultPage({ history }) {
     document.querySelector('#root').style.cssText = 'max-height: 100vh; overflow-y: scroll; ';
     document.body.style.backgroundColor = "white";
     
+    
   }, [])
+
+  useEffect(() => {
+    document.querySelector('#root').scrollTo({top:0, left:0})
+    
+  },[mbti])
   // console.log(allArr)
   // console.log(resultKeys)
   return (
