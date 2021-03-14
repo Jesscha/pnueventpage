@@ -75,7 +75,7 @@ function ResultPage({ history }) {
             >
               <div className="result-head">
 
-                 <img className="resultMainImage"   src={mbtiData.mainImage} alt="" />
+                 <img className="resultMainImage" style={{marginTop : mbti === 'ENTJ' ? '32px' : '' , marginBottom : mbti === 'ENTJ' ? '32px' : ''}}   src={mbtiData.mainImage} alt="" />
 
                 <div
                   className="subText"

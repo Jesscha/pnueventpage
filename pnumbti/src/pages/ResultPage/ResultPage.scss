@@ -58,11 +58,11 @@
   }
 
   .result-main-desc {
-    margin-top: 24px;
-    width: 80%;
+    margin-top: 0px;
+    width: 90%;
     padding: 40px;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
     line-height: 1.5;
     font-weight: bold;
@@ -76,7 +76,7 @@
   .result-second-desc {
     margin-top: 24px;
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
     padding: 40px;
     padding-bottom: 0;
     // border: solid 1px black;
@@ -172,9 +172,6 @@
     text-align: center;
     cursor: pointer;
     color: black;
-    a {
-      color: black;
-    }
   }
   .result-move-to-all:active {
     transform: scale(0.99);
@@ -189,6 +186,7 @@
     margin-top: 8px;
     width: 100%;
     margin-bottom: 100px;
+    cursor: pointer;
     // padding: 16px;
     // border: solid 1px black;
     // text-align: center;
@@ -201,11 +199,14 @@
     // font-size: 22px;
     // text-decoration: underline;
   }
+  .retest:active {
+    transform: scale(0.99);
+  }
 }
 
 .resultContent {
   margin-top: 40px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.1;
   width: 300px;
   // position: relative;
@@ -233,7 +234,7 @@
 .combinationBox {
   width: 91%;
   height: 300px;
-  margin-top: 16px;
+  margin-top: -40px;
   background-image: url("/img/combinationBox.png");
   background-size: 100%;
   background-size: contain;
