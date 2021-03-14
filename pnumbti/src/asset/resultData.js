@@ -12,8 +12,12 @@ const resultData = {
       -만약 생일 파티를 한다면 친구가 대신 열어주거나 하자고 말했을 가능성 99.9%에요.
       -리액션은 적을 수 있어도 챙겨주는 마음에 진심으로 감동해요.`,
     fitFriendsType: `ESFP`,
-    fitFriendsNickName: "찐연예인",
+    fitFriendsImg:'/img/esfp.png',
+    fitFriendsDesc: "(이미 노는 중)",
+    fitFriendsNickName: "찐셀러브리티",
     unfitFriendsType: "ESFJ",
+    unfitFriendsDesc: '아아 지금은 생파중~ 연락 안됩니다',
+    unfitFriendsImg:'/img/esfj.png',
     unfitFriendsNickName: "나이아가라폭포",
     bgImage: "/img/bg_box.png",
     textImage: "/img/intj_text.png",

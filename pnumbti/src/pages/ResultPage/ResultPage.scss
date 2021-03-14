@@ -93,6 +93,9 @@
   .result-third-desc {
     margin-top: 24px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     // padding: 40px;
     // border: solid 1px black;
 
@@ -102,28 +105,53 @@
     }
 
     .result-relation {
-      margin-top: 24px;
+      // margin-top: 24px;
       display: flex;
-
-      .left {
-        width: 49%;
-        padding: 40px;
-        border: solid 1px black;
-        text-align: center;
-        margin-right: 2%;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      padding-top: 20px;
+      hr {
+        border: solid 0.5px black;
+        width: 90%;
+      }
+      .desc {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 6px;
+      }
+      .nickName {
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 6px;
+      }
+      .top {
+        width: 90%;
+        // padding: 40px;
+        // border: solid 1px black;
+        // text-align: center;
+        // margin-right: 2%;
+        display: flex;
+        align-items: center;
         cursor: pointer;
       }
-      .left:active,
-      .right:active {
+      .top:active,
+      .bottom:active {
         transform: scale(0.99);
       }
 
-      .right {
-        width: 49%;
-        padding: 40px;
-        border: solid 1px black;
-        text-align: center;
+      .bottom {
+        width: 90%;
+        // padding: 40px;
+        // margin-top: 4px;
+        display: flex;
+        // border: solid 1px black;
+        // text-align: center;
+        align-items: center;
         cursor: pointer;
+      }
+      .right {
+        margin-left: 40px;
       }
     }
   }
@@ -139,8 +167,8 @@
   .result-move-to-all {
     width: 100%;
     margin-top: 24px;
-    padding: 16px;
-    border: solid 1px black;
+    // padding: 16px;
+    // border: solid 1px black;
     text-align: center;
     cursor: pointer;
     color: black;
@@ -151,20 +179,26 @@
   .result-move-to-all:active {
     transform: scale(0.99);
   }
-
-  .survey {
-    margin-top: 24px;
+  .advertise {
+    margin-top: 16px;
     width: 100%;
-    padding: 16px;
-    border: solid 1px black;
-    text-align: center;
     cursor: pointer;
-    text-align: center;
-    margin-bottom: 200px;
-    background-color: burlywood;
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
+  }
+
+  .retest {
+    margin-top: 8px;
+    width: 100%;
+    margin-bottom: 100px;
+    // padding: 16px;
+    // border: solid 1px black;
+    // text-align: center;
+    // cursor: pointer;
+    // text-align: center;
+    // margin-bottom: 200px;
+    // background-color: burlywood;
+    // color: white;
+    // font-weight: bold;
+    // font-size: 22px;
     // text-decoration: underline;
   }
 }
@@ -185,6 +219,7 @@
   .text::before {
     content: ".";
     position: absolute;
+    top: -7px;
     left: -10px;
     font-size: 14px;
     top: 0px;
@@ -193,4 +228,28 @@
 
 .resultContent:last-of-type {
   margin-bottom: 90px;
+}
+
+.combinationBox {
+  width: 91%;
+  height: 300px;
+  margin-top: 16px;
+  background-image: url("/img/combinationBox.png");
+  background-size: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+}
+
+.typeLogo {
+  width: 100px;
+}
+
+.relation {
+  color: #ffa4a4;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
 }

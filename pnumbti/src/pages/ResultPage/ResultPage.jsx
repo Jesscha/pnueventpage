@@ -123,6 +123,7 @@ function ResultPage({ history }) {
 
                     
                 </div>
+               
 
                 {/* <img className="resultText" src={mbtiData.textImage} alt=""/>
                  */}
@@ -150,56 +151,106 @@ function ResultPage({ history }) {
              
                 
               </div>
-               <div className="result-third-desc">
-                <div className="firstText">
-                  궁합
-                </div>
+              <div className="combinationBox">
+                <div className="result-third-desc">
+                
                 <div className="result-relation" >
-                  <div className="left"
+                  <div className="top"
                     onClick={() => {
                       history.push(`/result/${mbtiData.fitFriendsType}`)
                       moveToTop()
                     }}
-                  >
-                    {mbtiData.fitFriendsNickName}
+                    >
+                      <div className="left">
+                        <img  className="typeLogo" src={mbtiData.fitFriendsImg} alt=""/>
+                      </div>
+                      <div className="right">
+                        <div className="relation">감동의 궁합</div>
+                        <div className="desc">
+                          {mbtiData.fitFriendsDesc}  
+                        </div>
+                        <div className="nickName">
+                          {mbtiData.fitFriendsNickName}
+                        </div>
+                    
 
-                  </div>
-                  <div className="right"
+                      </div>
+                 
+                      
+                    </div>
+                    <hr />
+                  <div className="bottom"
                     onClick={() => {
                       history.push(`/result/${mbtiData.unfitFriendsType}`)
                       moveToTop()
                     }}
-                  >
-                    {mbtiData.unfitFriendsNickName}
+                    >
+                      <div className="left">
+                        <img className="typeLogo" src={mbtiData.unfitFriendsImg} alt=""/>
+                      </div>
+                      <div className="right">
+                        <div className="relation">섭섭한 궁합</div>
+                        <div className="desc">
+                          {mbtiData.unfitFriendsDesc}  
+                        </div>
+                        <div className="nickName">
+                          {mbtiData.unfitFriendsNickName}
+                        </div>
+                    
+
+                      </div>
+                 
                   </div>
 
                 </div>
               </div>
-              <div className="result-go-toPnuu">
+
+                </div>
+               
+              {/* <div className="result-go-toPnuu">
                 내 생일 펀딩해 보기
         </div>
               <div className="result-go-toPnuu">
                 다가오는 친구 생일 제대로 축하해주기
-        </div>
-              <div className="result-move-to-all"
+        </div> */}
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                maxWidth: '360px'
+                
+                }}
+              
+              >
+                  <img className="advertise"
+                src={`/img/ad_img${Math.floor((Math.random()*100))%2}.png`}
+               alt=''
+              />
+
+              
+              <img className="result-move-to-all"
                 onClick={() => {
                   moveToTop()
                   history.push(`/result/all`)
-
                 }}
-              >
-                전체 결과 보기
-              </div>
-              <div
-                className="survey"
-                onClick={() => {
-                  history.push(`/survey`)
-                }}
-              >
-                설문하기
-
-              </div>
+                src='/img/allresult.png'
+                alt=""
+              />
+                
               
+              <img
+                className="retest"
+                onClick={() => {
+                  history.push(`/`)
+                }}
+                src='/img/retest.png'
+                alt=""
+              />
+
+              </div>
+            
+            
 
 
 
