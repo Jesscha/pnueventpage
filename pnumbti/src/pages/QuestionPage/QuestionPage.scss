@@ -27,10 +27,14 @@
     min-height: 400px;
     .question {
       width: 100%;
-      min-height: 140px;
-      margin-top: 32px;
+      // min-height: 140px;
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       img {
-        width: 100%;
+        width: 89%;
+        // height: 100px;
       }
     }
 
@@ -41,21 +45,26 @@
     .optionContainner {
       display: flex;
       flex-direction: column;
+      align-items: center;
       margin-top: 20px;
       img {
-        width: 100%;
+        width: 89%;
       }
 
       .optionSelect {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
         cursor: pointer;
-        min-height: 80px;
+        // min-height: 80px;
       }
       .optionSelect:active {
         transform: scale(0.98);
       }
-      .optionSelect:first-of-type {
-        margin-right: 2%;
-      }
+      // .optionSelect:first-of-type {
+      //   margin-right: 2%;
+      // }
     }
   }
   .progressbar-position {

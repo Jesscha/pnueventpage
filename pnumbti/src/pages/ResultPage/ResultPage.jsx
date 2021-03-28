@@ -36,6 +36,7 @@ function ResultPage({ history }) {
   
   useEffect(() => {
     document.querySelector('.container').style.cssText = 'width: 100vw';
+    document.querySelector('#root').style.cssText =  'overflow-x: hidden';
     document.body.style.backgroundColor = "white";
     
     
