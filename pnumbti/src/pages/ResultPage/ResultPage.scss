@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   padding-top: 40px;
+  width: 100%;
 
   .all-elem {
     margin-top: 24px;
@@ -24,14 +25,14 @@
     font-weight: bold;
   }
   .resultMainImage {
-    width: 400px;
+    width: 100%;
   }
 
   .resusltWrapper {
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
-    width: 92%;
+    width: 100%;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -61,7 +62,7 @@
 
   .result-main-desc {
     margin-top: 0px;
-    width: 90%;
+    width: 100%;
     padding: 40px;
     text-align: center;
     font-size: 15px;

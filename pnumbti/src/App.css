@@ -147,7 +147,7 @@ body {
 }
 
 .container {
-  width: 100vw;
+  width: 80vw;
   max-height: 821px;
   height: fit-content;
   overflow-x: visible;
@@ -168,8 +168,8 @@ a {
 }
 
 #root {
-  position: fixed;
+  /* position: fixed;
   /* height: 100vh; */
-  top: 50%;
-  transform: translateY(-50%);
+  /* top: 50%;
+  transform: translateY(-50%); */
 }

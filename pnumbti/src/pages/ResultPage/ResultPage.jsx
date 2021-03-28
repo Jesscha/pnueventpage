@@ -35,7 +35,7 @@ function ResultPage({ history }) {
   // overflow: scroll;
   
   useEffect(() => {
-    document.querySelector('#root').style.cssText = 'max-height: 100vh; overflow-y: scroll; ';
+    document.querySelector('.container').style.cssText = 'width: 100vw';
     document.body.style.backgroundColor = "white";
     
     
@@ -71,7 +71,10 @@ function ResultPage({ history }) {
             }
           </div>
           :
-          <div >
+          <div style={{
+            width: '100%',
+            // overflow: 'hidden'
+          }} >
             <div style={{
               width: "100%",
               display: 'flex',
