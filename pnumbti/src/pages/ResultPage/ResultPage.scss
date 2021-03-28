@@ -25,19 +25,19 @@
     font-weight: bold;
   }
   .resultMainImage {
-    width: 100%;
+    width: 90%;
   }
 
   .resusltWrapper {
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 90%;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 890px;
+    // height: 890px;
     max-height: 890px;
   }
 
@@ -78,7 +78,7 @@
 
   .result-second-desc {
     margin-top: 24px;
-    width: 100%;
+    width: 90%;
     font-size: 15px;
     padding: 40px;
     padding-bottom: 0;
@@ -95,7 +95,7 @@
 
   .result-third-desc {
     margin-top: 24px;
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -112,9 +112,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      // padding: 20px;
       padding-top: 20px;
-      width: 379px;
+      width: 100%;
       hr {
         border: solid 0.5px black;
         width: 90%;
@@ -160,7 +160,7 @@
     }
   }
   .result-go-toPnuu {
-    width: 100%;
+    width: 90%;
     margin-top: 24px;
     padding: 32px;
     border: solid 1px black;
@@ -169,7 +169,7 @@
   }
 
   .result-move-to-all {
-    width: 100%;
+    width: 90%;
     margin-top: 24px;
     // padding: 16px;
     // border: solid 1px black;
@@ -182,13 +182,13 @@
   }
   .advertise {
     margin-top: 16px;
-    width: 100%;
+    width: 90%;
     cursor: pointer;
   }
 
   .retest {
     margin-top: 8px;
-    width: 100%;
+    width: 90%;
     margin-bottom: 100px;
     cursor: pointer;
     // padding: 16px;
@@ -212,7 +212,7 @@
   margin-top: 40px;
   font-size: 14px;
   // line-height: 1.1;
-  width: 300px;
+  width: 80%;
   // position: relative;
   .contentTitle {
     font-weight: 900;
@@ -232,11 +232,11 @@
 }
 
 .resultContent:last-of-type {
-  margin-bottom: 90px;
+  // margin-bottom: 90px;
 }
 
 .combinationBox {
-  width: 100%;
+  width: 90%;
   height: 320px;
   // margin-top: -40px;
   background-image: url("/img/combinationBox.png");
@@ -245,6 +245,7 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-position: center;
 }
 

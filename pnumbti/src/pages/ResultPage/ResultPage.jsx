@@ -39,7 +39,11 @@ function ResultPage({ history }) {
     document.querySelector('#root').style.cssText =  'overflow-x: hidden';
     document.body.style.backgroundColor = "white";
     
-    
+    return () => {
+      document.querySelector('.container').style.cssText = 'width: 80vw';
+    document.querySelector('#root').style.cssText =  'overflow-x: visible'
+      
+    }
   }, [])
 
   useEffect(() => {
