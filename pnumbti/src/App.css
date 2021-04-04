@@ -144,7 +144,12 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   transition: all 300ms;
   overflow-x: hidden;
-  /* height: 100vh */
+  height: 85vh;
+}
+@media (min-width: 500px) {
+  body {
+    height: 100vh;
+  }
 }
 
 .container {
