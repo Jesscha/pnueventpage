@@ -1,5 +1,5 @@
 import React from "react";
-import heartIcon from "../../asset/heart.svg";
+// import heartIcon from "../../asset/heart.svg";
 import "./ProgressBar.scss";
 
 const ProgressBar = ({ bgcolor, completed }) => {
@@ -29,7 +29,7 @@ const ProgressBar = ({ bgcolor, completed }) => {
   return (
     <div style={containerStyles}>
       <div className="filler" style={fillerStyles}>
-        <img className="heartIcon" src={heartIcon} alt="" />
+        <img className="heartIcon" src={'/img/heart.svg'} alt="" />
       </div>
     </div>
   );
