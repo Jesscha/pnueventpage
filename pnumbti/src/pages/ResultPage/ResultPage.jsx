@@ -17,8 +17,7 @@ function ResultPage({ history }) {
   const allArr = makeResultArr();
   const resultKeys = Object.keys(resultData);
   const moveToTop = () => {
-    const container = document.querySelector(".container")
-    container.scroll(0, 0)
+    window.scrollTo(0, 0);
 
   }
 
