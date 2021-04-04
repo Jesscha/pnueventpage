@@ -103,9 +103,7 @@ function QuestionPage({history}) {
     }
 
     // 마지막 페이지면 다음장 가기기능 정지
-    if (questionIndex + 1 === numberOfQuestions) {
-      setIsLast(true);
-    }
+    
     setQuestionIndex(questionIndex + 1);
     
   };
@@ -176,7 +174,25 @@ function QuestionPage({history}) {
             alt=""
           />
         </div>
-      ) : !isLast ? (
+      ) : isLast ? (
+          <div className="question-area">
+            <div className="endingQuestion">
+              <img className="endingLogo" src="/img/endingMain.gif" alt="" />
+              <img  className="endingMessage" src="/img/last_message.png" alt=""/>
+              
+              <img
+              src={'/img/showResultButton.png'}
+              onClick={() => {
+                history.push(`/result/${calulateMBTI()}`);
+              }}
+              className="showResultButton"
+              alt=''
+              />
+        
+        </div>
+          </div>
+            
+      ):(
         <div className="question-area">
           <div className="progressbar-position">
             <ProgressBar
@@ -202,12 +218,14 @@ function QuestionPage({history}) {
               className="optionSelect"
                 onClick={() =>
                 {
-                  if (questionIndex + 1 === numberOfQuestions) {
-                  // document.querySelector('.mainImage').style.display = 'none'
+                 
+                  setMBTIScore(questionData[questionIndex].optionOne);
+                   if (questionIndex + 1 === numberOfQuestions) {
+                  setIsLast(true)
                   
                   
                 }
-                setMBTIScore(questionData[questionIndex].optionOne)}
+                }
               }
                 
             >
@@ -220,29 +238,20 @@ function QuestionPage({history}) {
                   // document.querySelector('.mainImage').style.display = 'none'
                   
                 }
-                setMBTIScore(questionData[questionIndex].optionTwo)}
+                  setMBTIScore(questionData[questionIndex].optionTwo);
+                if (questionIndex + 1 === numberOfQuestions) {
+                  setIsLast(true)
+                  
+                  
+                }
+                }
               }
             >
               <img src={questionData[questionIndex].optionTwoText} alt="q2" />
             </div>
           </div>
         </div>
-      ) : (
-            <div className="endingQuestion">
-              {/* <img className="endingLogo" src="/img/endingMain.gif" alt="" /> */}
-              <img  className="endingMessage" src="/img/last_message.png" alt=""/>
-              
-              <img
-              src={'/img/showResultButton.png'}
-              onClick={() => {
-                history.push(`/result/${calulateMBTI()}`);
-              }}
-              className="showResultButton"
-              alt=''
-              />
-        
-        </div>
-      )}
+      ) }
 
       <div className="logo">
         <img src={ (questionIndex > 6 && questionIndex < 11 )  ? whiteLogo: logo} alt="" />
