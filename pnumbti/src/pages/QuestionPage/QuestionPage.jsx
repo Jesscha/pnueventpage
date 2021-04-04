@@ -4,7 +4,7 @@ import ProgressBar from "../ProgressBar/ProgressBar.jsx";
 import questionData from "../../asset/qustionData.js";
 import "./QuestionPage.scss";
 // import { stringBreak } from "../../utils/utils.js";
-import introMessage from "../../asset/intro_message.png";
+// import introMessage from "../../asset/intro_message.png";
 import logo from "../../asset/logo_black.svg";
 import whiteLogo from "../../asset/logo_white.svg";
 // import PreloadImage from 'react-preload-image';
@@ -167,7 +167,7 @@ function QuestionPage({history}) {
         <div className="question-area">
           <img
             className="introMessage"
-            src={introMessage}
+            src={'/img/intro_message.png'}
             onClick={() => {
               setIsFirst(false);
             }}
