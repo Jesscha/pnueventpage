@@ -229,7 +229,7 @@ function QuestionPage({history}) {
         </div>
       ) : (
             <div className="endingQuestion">
-              <img className="endingLogo" src="/img/endingMain.gif" alt="" />
+              {/* <img className="endingLogo" src="/img/endingMain.gif" alt="" /> */}
               <img  className="endingMessage" src="/img/last_message.png" alt=""/>
               
               <img

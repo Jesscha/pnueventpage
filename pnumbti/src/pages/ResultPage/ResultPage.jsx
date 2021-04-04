@@ -94,10 +94,6 @@ function ResultPage({ history }) {
                  marginLeft: 'auto'
                 }}
               />
-
-              
-              
-              
               <img
                 className="retest"
                 onClick={() => {
