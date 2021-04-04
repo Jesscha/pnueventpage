@@ -127,7 +127,7 @@ const resultData = {
 ( ...... 30인실 혼자 써도 될까요?)🗿`
   },
   ENTJ: {
-    nickName: "🔥🔥You know… 윤호🔥🔥",
+    nickName: "🔥🔥열정열정열정맨🔥🔥",
     nickNameDesc: "어~ 그래 케이크만 사 올래?🍰",
     mainImage: `/img/entj.png`,
     mainDesc: `추진력 갑이고 시원시원해요.

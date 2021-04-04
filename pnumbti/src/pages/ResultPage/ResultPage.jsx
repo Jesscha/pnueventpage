@@ -38,10 +38,12 @@ function ResultPage({ history }) {
     document.querySelector('.container').style.cssText = 'width: 100vw';
     document.querySelector('#root').style.cssText =  'overflow-x: hidden';
     document.body.style.backgroundColor = "white";
+    document.body.style.height = "auto";
     
     return () => {
       document.querySelector('.container').style.cssText = 'width: 80vw';
-    document.querySelector('#root').style.cssText =  'overflow-x: visible'
+      document.querySelector('#root').style.cssText = 'overflow-x: visible'
+      document.body.style.height = "";
       
     }
   }, [])
@@ -69,11 +71,46 @@ function ResultPage({ history }) {
                       history.push(`/result/${resultKeys[i]}`)
                     }}
                   >
+                    <div className="imgWrapper">
+                       <img
+                      className="all-elem-img" 
+                        src={type.mainImage}
+                        style={{height: type.nickName === '🔥🔥열정열정열정맨🔥🔥' ? '60px':''}}
+                      alt=''
+                    />
+                    </div>
+                   
                     {type.nickName}
                   </div>
                 )
               })
             }
+            <img className="advertise"
+                src={`/img/ad_img${Math.floor((Math.random()*100))%2}.png`}
+              alt=''
+               style={{
+                // marginTop: '32px',
+                 marginRight: 'auto',
+                 marginLeft: 'auto'
+                }}
+              />
+
+              
+              
+              
+              <img
+                className="retest"
+                onClick={() => {
+                  history.push(`/`)
+                }}
+              style={{
+                marginTop: '16px',
+                marginRight: 'auto',
+                marginLeft: 'auto'
+                }}
+                src='/img/retest.png'
+                alt=""
+              />
           </div>
           :
           <div style={{
