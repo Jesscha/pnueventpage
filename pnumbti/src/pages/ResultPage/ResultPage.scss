@@ -53,7 +53,7 @@
     width: 90%;
   }
 
-  .resusltWrapper {
+  .resultWrapper {
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
@@ -63,7 +63,9 @@
     flex-direction: column;
     align-items: center;
     // height: 890px;
-    max-height: 890px;
+    // max-height: 890px;
+    border: solid 11px #41403e;
+    padding-bottom: 56px;
   }
 
   .result-head {
@@ -119,8 +121,8 @@
   }
 
   .result-third-desc {
-    margin-top: 24px;
-    width: 90%;
+    // margin-top: 24px;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -138,7 +140,7 @@
       flex-direction: column;
       align-items: center;
       // padding: 20px;
-      padding-top: 20px;
+      // padding-top: 20px;
       width: 100%;
       hr {
         border: solid 0.5px black;
@@ -180,7 +182,7 @@
         cursor: pointer;
       }
       .right {
-        margin-left: 40px;
+        margin-left: 20px;
       }
     }
   }
@@ -262,16 +264,20 @@
 
 .combinationBox {
   width: 90%;
-  height: 320px;
+  // height: 320px;
   // margin-top: -40px;
-  background-image: url("/img/combinationBox.png");
+  border-image: url("/img/combinationBox.png") 30;
+  border: solid 11px #41403e;
   background-size: 100%;
+  margin-top: 20px;
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-position: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .typeLogo {

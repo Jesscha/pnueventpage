@@ -133,7 +133,9 @@ function ResultPage({ history }) {
                   {mbtiData.nickName}
                 </div>
               </div>
-              <div className="resusltWrapper" style={{ backgroundImage: `url(${mbtiData.bgImage})` }}>
+              <div className="resultWrapper" style={{
+                borderImage: `url(${mbtiData.bgImage}) 30`
+              }}>
                 <div className="result-main-desc">
                    {stringBreak(mbtiData.mainDesc)}
                 </div>
@@ -197,7 +199,11 @@ function ResultPage({ history }) {
              
                 
               </div>
-              <div className="combinationBox">
+              <div className="combinationBox"
+                style={{
+                borderImage: `url(${mbtiData.bgImage}) 30`
+              }}
+              >
                 <div className="result-third-desc">
                 
                 <div className="result-relation" >
