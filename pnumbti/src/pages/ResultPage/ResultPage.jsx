@@ -74,7 +74,7 @@ function ResultPage({ history }) {
                        <img
                       className="all-elem-img" 
                         src={type.mainImage}
-                        style={{height: type.nickName === '🔥🔥열정열정열정맨🔥🔥' ? '60px':''}}
+                        style={{height: type.nickName === '🔥🔥열정열정열정맨🔥🔥' ? '':''}}
                       alt=''
                     />
                     </div>
