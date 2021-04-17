@@ -55,6 +55,17 @@ function ResultPage({ history }) {
   // console.log(resultKeys)
   return (
     <div className="resultPage">
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Question</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+        <meta property="og:description" content="생일로알아보는 내 속마음 결과 페이지" />
+        <meta property="og:image" content={mbtiData.mainImage} />
+        <meta property="og:image:width" content="800"/>
+        <meta property="og:image:height" content="400"/>
+                
+        
+        </Helmet>
        <div className="logo">
         <img src={ logo} alt="" />
       </div>

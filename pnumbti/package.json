@@ -42,7 +42,8 @@
   "reactSnap": {
     "include": [
       "/",
-      "/question"
+      "/question",
+      "/result/ENTP"
     ]
   }
 }
