@@ -172,7 +172,7 @@ function QuestionPage({history}) {
         <meta property="og:image" content={questionData[1].mainImage} />
         <meta property="og:image:width" content="800"/>
         <meta property="og:image:height" content="400"/>
-                
+        <link href="/static/css/main.7b8c3985.chunk.css" rel="stylesheet"></link>
         
         </Helmet>
 
