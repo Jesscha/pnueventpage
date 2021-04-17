@@ -85,7 +85,7 @@ function ResultPage({ history }) {
                     <div className="imgWrapper">
                        <img
                       className="all-elem-img" 
-                        src={type.mainImage}
+                        src={type?.mainImage}
                         style={{height: type.nickName === '🔥🔥열정열정열정맨🔥🔥' ? '':''}}
                       alt=''
                     />
@@ -133,7 +133,7 @@ function ResultPage({ history }) {
             >
               <div className="result-head">
 
-                 <img className="resultMainImage" style={{marginTop : mbti === 'ENTJ' ? '32px' : '' , marginBottom : mbti === 'ENTJ' ? '32px' : ''}}   src={mbtiData.mainImage} alt="" />
+                 <img className="resultMainImage" style={{marginTop : mbti === 'ENTJ' ? '32px' : '' , marginBottom : mbti === 'ENTJ' ? '32px' : ''}}   src={mbtiData?.mainImage} alt="" />
 
                 <div
                   className="subText"
