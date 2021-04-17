@@ -7,6 +7,7 @@ import "./QuestionPage.scss";
 // import introMessage from "../../asset/intro_message.png";
 import logo from "../../asset/logo_black.svg";
 import whiteLogo from "../../asset/logo_white.svg";
+import { Helmet } from "react-helmet";
 // import PreloadImage from 'react-preload-image';
 // 이 컴포넌트의 state로 M,B,T,I 를 넣는다.
 // 각 문항이 클릭 되면 두가지 액션이 시작된다.
@@ -163,6 +164,14 @@ function QuestionPage({history}) {
 
   return (
     <div className="question-container" >
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Question</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+                <meta property="og:description" content="생일로알아보는 내 속마음 질문 페이지" />
+        </Helmet>
+
+
       {isFirst ? (
         <div className="question-area">
           <img
