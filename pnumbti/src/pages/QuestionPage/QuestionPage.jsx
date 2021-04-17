@@ -169,6 +169,8 @@ function QuestionPage({history}) {
                 <title>Question</title>
                 <link rel="canonical" href="http://mysite.com/example" />
                 <meta property="og:description" content="생일로알아보는 내 속마음 질문 페이지" />
+                <meta property="og:image" content={questionData[1].mainImage} />
+        
         </Helmet>
 
 
