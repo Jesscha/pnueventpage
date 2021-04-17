@@ -147,12 +147,12 @@ function ResultPage({ history }) {
                 borderImage: `url(${mbtiData?.bgImage}) 30`
               }}>
                 <div className="result-main-desc">
-                   {stringBreak(mbtiData?.mainDesc)}
+                   {mbtiData && stringBreak(mbtiData?.mainDesc)}
                 </div>
                  <div className="resultContent">
                     <div className="contentTitle">파티는... </div>
                     <div className="contents">
-                      {stringBreak(mbtiData?.partyType)}
+                      {mbtiData&&stringBreak(mbtiData?.partyType)}
                     </div>
 
                     
@@ -160,7 +160,7 @@ function ResultPage({ history }) {
                  <div className="resultContent">
                     <div className="contentTitle">선물은... </div>
                     <div className="contents">
-                      {stringBreak(mbtiData?.presentType)}
+                      {mbtiData&&stringBreak(mbtiData?.presentType)}
                     </div>
 
                     
@@ -168,7 +168,7 @@ function ResultPage({ history }) {
                  <div className="resultContent">
                     <div className="contentTitle">당신이 좋아할 선물</div>
                     <div className="contents">
-                      {stringBreak(mbtiData?.presentYouWillLike)}
+                      {mbtiData&& stringBreak(mbtiData?.presentYouWillLike)}
                     </div>
 
                     
@@ -176,7 +176,7 @@ function ResultPage({ history }) {
                  <div className="resultContent">
                     <div className="contentTitle">당신이 싫어할 선물</div>
                     <div className="contents">
-                      {stringBreak(mbtiData?.presentYouWillDislike)}
+                      {mbtiData && stringBreak(mbtiData?.presentYouWillDislike)}
                     </div>
 
                     
