@@ -5,7 +5,7 @@ import resultData from '../../asset/resultData';
 import './ResultPage.scss'
 import { stringBreak } from '../../utils/utils'; 
 import logo from "../../asset/logo_black.svg";
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 
 // 16가지 결과를 kv로 저장해 놓는다.
@@ -56,7 +56,7 @@ function ResultPage({ history }) {
   // console.log(resultKeys)
   return (
     <div className="resultPage">
-      {/* <Helmet>
+      <Helmet>
                 <meta charSet="utf-8" />
                 <title>Question</title>
                 <link rel="canonical" href="http://mysite.com/example" />
@@ -64,7 +64,7 @@ function ResultPage({ history }) {
                 <meta property="og:image" content={resultData[mbti.trim()]?.mainImage} />
                 <meta property="og:image:width" content="800"/>
                 <meta property="og:image:height" content="400"/>
-        </Helmet> */}
+        </Helmet>
        <div className="logo">
         <img src={ logo} alt="" />
       </div>
@@ -84,12 +84,12 @@ function ResultPage({ history }) {
                        <img
                       className="all-elem-img" 
                         src={type?.mainImage}
-                        style={{height: type.nickName === '🔥🔥열정열정열정맨🔥🔥' ? '':''}}
+                        style={{height: type?.nickName === '🔥🔥열정열정열정맨🔥🔥' ? '':''}}
                       alt=''
                     />
                     </div>
                    
-                    {type.nickName}
+                    {type?.nickName}
                   </div>
                 )
               })
@@ -136,23 +136,23 @@ function ResultPage({ history }) {
                 <div
                   className="subText"
                 >
-                  {mbtiData.nickNameDesc}
+                  {mbtiData?.nickNameDesc}
                 </div>
                 <div
                   className="mainText">
-                  {mbtiData.nickName}
+                  {mbtiData?.nickName}
                 </div>
               </div>
               <div className="resultWrapper" style={{
-                borderImage: `url(${mbtiData.bgImage}) 30`
+                borderImage: `url(${mbtiData?.bgImage}) 30`
               }}>
                 <div className="result-main-desc">
-                   {stringBreak(mbtiData.mainDesc)}
+                   {stringBreak(mbtiData?.mainDesc)}
                 </div>
                  <div className="resultContent">
                     <div className="contentTitle">파티는... </div>
                     <div className="contents">
-                      {stringBreak(mbtiData.partyType)}
+                      {stringBreak(mbtiData?.partyType)}
                     </div>
 
                     
@@ -160,7 +160,7 @@ function ResultPage({ history }) {
                  <div className="resultContent">
                     <div className="contentTitle">선물은... </div>
                     <div className="contents">
-                      {stringBreak(mbtiData.presentType)}
+                      {stringBreak(mbtiData?.presentType)}
                     </div>
 
                     
@@ -168,7 +168,7 @@ function ResultPage({ history }) {
                  <div className="resultContent">
                     <div className="contentTitle">당신이 좋아할 선물</div>
                     <div className="contents">
-                      {stringBreak(mbtiData.presentYouWillLike)}
+                      {stringBreak(mbtiData?.presentYouWillLike)}
                     </div>
 
                     
@@ -176,17 +176,17 @@ function ResultPage({ history }) {
                  <div className="resultContent">
                     <div className="contentTitle">당신이 싫어할 선물</div>
                     <div className="contents">
-                      {stringBreak(mbtiData.presentYouWillDislike)}
+                      {stringBreak(mbtiData?.presentYouWillDislike)}
                     </div>
 
                     
                 </div>
                
 
-                {/* <img className="resultText" src={mbtiData.textImage} alt=""/>
+                {/* <img className="resultText" src={mbtiData?.textImage} alt=""/>
                  */}
                 {/* <div className="resultText" >
-                  {stringBreak(mbtiData.text)}
+                  {stringBreak(mbtiData?.text)}
                 </div> */}
               {/* <div className="result-second-desc">
                 <div className="inFriendsBirthDay">
@@ -194,14 +194,14 @@ function ResultPage({ history }) {
                     친구 생일에 나는<br /><br />
                   </div>
 
-                  {stringBreak(mbtiData.inFriendsBirthDay)}
+                  {stringBreak(mbtiData?.inFriendsBirthDay)}
                 </div>
 
                 <div className="inMyBirthDay">
                   <div className="intro">
                     내 생일에 나는<br /><br />
                   </div>
-                  {stringBreak(mbtiData.inMyBirthDay)}
+                  {stringBreak(mbtiData?.inMyBirthDay)}
                 </div>
                 
 
@@ -211,7 +211,7 @@ function ResultPage({ history }) {
               </div>
               <div className="combinationBox"
                 style={{
-                borderImage: `url(${mbtiData.bgImage}) 30`
+                borderImage: `url(${mbtiData?.bgImage}) 30`
               }}
               >
                 <div className="result-third-desc">
@@ -219,20 +219,20 @@ function ResultPage({ history }) {
                 <div className="result-relation" >
                   <div className="top"
                     onClick={() => {
-                      history.push(`/result/${mbtiData.fitFriendsType}`)
+                      history.push(`/result/${mbtiData?.fitFriendsType}`)
                       moveToTop()
                     }}
                     >
                       <div className="left">
-                        <img  className="typeLogo" src={mbtiData.fitFriendsImg} alt=""/>
+                        <img  className="typeLogo" src={mbtiData?.fitFriendsImg} alt=""/>
                       </div>
                       <div className="right">
                         <div className="relation">감동의 궁합</div>
                         <div className="desc">
-                          {mbtiData.fitFriendsDesc}  
+                          {mbtiData?.fitFriendsDesc}  
                         </div>
                         <div className="nickName">
-                          {mbtiData.fitFriendsNickName}
+                          {mbtiData?.fitFriendsNickName}
                         </div>
                     
 
@@ -243,20 +243,20 @@ function ResultPage({ history }) {
                     <hr />
                   <div className="bottom"
                     onClick={() => {
-                      history.push(`/result/${mbtiData.unfitFriendsType}`)
+                      history.push(`/result/${mbtiData?.unfitFriendsType}`)
                       moveToTop()
                     }}
                     >
                       <div className="left">
-                        <img className="typeLogo" src={mbtiData.unfitFriendsImg} alt=""/>
+                        <img className="typeLogo" src={mbtiData?.unfitFriendsImg} alt=""/>
                       </div>
                       <div className="right">
                         <div className="relation">섭섭한 궁합</div>
                         <div className="desc">
-                          {mbtiData.unfitFriendsDesc}  
+                          {mbtiData?.unfitFriendsDesc}  
                         </div>
                         <div className="nickName">
-                          {mbtiData.unfitFriendsNickName}
+                          {mbtiData?.unfitFriendsNickName}
                         </div>
                     
 
