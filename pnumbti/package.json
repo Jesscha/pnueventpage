@@ -43,7 +43,28 @@
     "include": [
       "/",
       "/question",
-      "/result/ENTP"
+      "/result/intj",
+      "/result/intp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp",
+      "/result/entp"
     ],
     "inlineCss": true
   }
