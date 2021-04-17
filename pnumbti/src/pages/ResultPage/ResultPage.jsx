@@ -5,6 +5,7 @@ import resultData from '../../asset/resultData';
 import './ResultPage.scss'
 import { stringBreak } from '../../utils/utils'; 
 import logo from "../../asset/logo_black.svg";
+import { Helmet } from 'react-helmet';
 
 
 // 16가지 결과를 kv로 저장해 놓는다.
