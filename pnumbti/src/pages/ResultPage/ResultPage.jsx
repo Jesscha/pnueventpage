@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { useHistory, useParams, withRouter } from 'react-router-dom';
+import {  useParams, withRouter } from 'react-router-dom';
 import resultData from '../../asset/resultData';
 import './ResultPage.scss'
 import { stringBreak } from '../../utils/utils'; 
@@ -13,7 +13,7 @@ import { Helmet } from 'react-helmet';
 function ResultPage({ history }) {
 
   const { mbti } = useParams();
-  const history = useHistory();
+  // const history = useHistory();
 
   const mbtiData = resultData[mbti.trim().toUpperCase()];
   const allArr = makeResultArr();
