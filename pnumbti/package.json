@@ -46,7 +46,18 @@
       "/result/intj",
       "/result/intp",
       "/result/entj",
-      "/result/entp"
+      "/result/entp",
+      "/result/infj",
+      "/result/infp",
+      "/result/enfj",
+      "/result/enfp",
+      "/result/istp",
+      "/result/istj",
+      "/result/isfj",
+      "/result/esfj",
+      "/result/isfp",
+      "/result/esfp",
+      "/result/estp"
     ]
   }
 }
