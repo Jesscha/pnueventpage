@@ -5,7 +5,7 @@ import resultData from '../../asset/resultData';
 import './ResultPage.scss'
 import { stringBreak } from '../../utils/utils'; 
 import logo from "../../asset/logo_black.svg";
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 
 
 // 16가지 결과를 kv로 저장해 놓는다.
@@ -56,7 +56,7 @@ function ResultPage({ history }) {
   // console.log(resultKeys)
   return (
     <div className="resultPage">
-      <Helmet>
+      {/* <Helmet>
                 <meta charSet="utf-8" />
                 <title>Question</title>
                 <link rel="canonical" href="http://mysite.com/example" />
@@ -64,7 +64,7 @@ function ResultPage({ history }) {
                 <meta property="og:image" content={resultData[mbti.trim()]?.mainImage} />
                 <meta property="og:image:width" content="800"/>
                 <meta property="og:image:height" content="400"/>
-        </Helmet>
+        </Helmet> */}
        <div className="logo">
         <img src={ logo} alt="" />
       </div>
