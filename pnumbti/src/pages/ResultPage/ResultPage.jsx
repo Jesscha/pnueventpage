@@ -14,7 +14,7 @@ function ResultPage({ history }) {
 
   const { mbti } = useParams();
 
-  const mbtiData = resultData[mbti.trim()];
+  const mbtiData = resultData[mbti.trim().toUpperCase()];
   const allArr = makeResultArr();
   const resultKeys = Object.keys(resultData);
   const moveToTop = () => {
