@@ -15,7 +15,7 @@ function HomePage({ history }) {
   return (
     <div className="home-container">
       <Helmet>
-               <link rel="preload" as="image" href="/img/showResultButton.png" />
+               {/* <link rel="preload" as="image" href="/img/showResultButton.png" />
     <link rel="preload" as="image" href="/img/last_message.png" />
     <link rel="preload" as="image" href="/img/heart.svg" />
     <link rel="preload" as="image" href="/img/intro_message.png" />
@@ -97,7 +97,7 @@ function HomePage({ history }) {
     <link rel="preload" as="image" href="/img/isfj.gif" />
     <link rel="preload" as="image" href="/img/isfp.gif" />
     <link rel="preload" as="image" href="/img/istj.gif" />
-    <link rel="preload" as="image" href="/img/istp.gif" />
+    <link rel="preload" as="image" href="/img/istp.gif" /> */}
         
         </Helmet>
 
