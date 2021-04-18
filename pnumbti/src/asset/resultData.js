@@ -2,7 +2,8 @@ const resultData = {
   INTJ: {
     nickName: "✍🏻데카르트✍🏻",
     nickNameDesc: "파티란 무엇인가…생일이란 무엇인가…",
-    mainImage: `/img/intj.png`,
+    mainImage: `/img/intj.gif`,
+    mainPng: `/img/intj.png`,
     mainDesc: `독립적이고 합리적이에요.
 항상 논리가 뛰어나죠.📚 `,
 
@@ -66,7 +67,8 @@ const resultData = {
   INTP: {
     nickName: "자발적 아싸😈",
     nickNameDesc: "철이 없었죠... 생파가 싫어서 유학을 갔다는 게",
-    mainImage: `/img/intp.png`,
+    mainImage: `/img/intp.gif`,
+    mainPng: `/img/intp.png`,
     mainDesc: `외향적이기보단 내향적인 편이에요.👀
 많은 사람을 곁에 두지 않아요.
 하지만 친한 친구들과 잘 놀아요.🕺🏻`,
@@ -129,7 +131,8 @@ const resultData = {
   ENTJ: {
     nickName: "🔥🔥열정열정열정맨🔥🔥",
     nickNameDesc: "어~ 그래 케이크만 사 올래?🍰",
-    mainImage: `/img/entj.png`,
+    mainImage: `/img/entj.gif`,
+    mainPng: `/img/entj.png`,
     mainDesc: `추진력 갑이고 시원시원해요.
 이 시대의 Cool인.😎
 똑 부러진다는 소리를 많이 들어요.✌️`,
@@ -193,7 +196,8 @@ const resultData = {
   ENTP: {
     nickName: "🌸🐿다람이🐿🌸",
     nickNameDesc: "I’m on my way ~ 👉👉️👉️",
-    mainImage: `/img/entp.png`,
+    mainImage: `/img/entp.gif`,
+    mainPng: `/img/entp.png`,
     mainDesc: `️호불호가 정확하고 개성이 넘쳐요.⚡️
 좋아하는 것에 열정을 쏟고 시간을 투자해요.🍻`,
     
@@ -267,7 +271,8 @@ const resultData = {
   INFJ: {
     nickName: "🐈🐈고앵이🐈 🐈",
     nickNameDesc: "인간 겉바속촉🍪",
-    mainImage: `/img/infj.png`,
+    mainImage: `/img/infj.gif`,
+    mainPng: `/img/infj.png`,
     mainDesc: `눈치가 빠르고 감정이 섬세한 따뜻한 사람이에요.
       완벽주의가 있어서 친구 선물을 챙기든, 파티를 기획하든 혼신의 힘을 다해요.`,
     
@@ -311,7 +316,8 @@ const resultData = {
   INFP: {
     nickName: "피터팬🦋️",
     nickNameDesc: "세상 사람들이 모두 우리같다면… 유토피아일텐데",
-    mainImage: `/img/infp.png`,
+    mainImage: `/img/infp.gif`,
+    mainPng: `/img/infp.png`,
     mainDesc: `배려심이 깊고 순수한 사람이에요.🐥🧼
 관계에서는 어느 정도 선을 지키는 편이에요.🌵`,
     
@@ -354,7 +360,8 @@ const resultData = {
   ENFJ: {
     nickName: "👀램프요정💛💙️",
     nickNameDesc: "소원을 말~해봐~~ 네 행복 = 내 행복",
-    mainImage: `/img/enfj.png`,
+    mainImage: `/img/enfj.gif`,
+    mainPng: `/img/enfj.png`,
     mainDesc: `정이 많고 따뜻한 사람이에요.🐣
 주변 사람을 항상 잘 챙겨주려고 한답니다.💊`,
     
@@ -404,7 +411,8 @@ const resultData = {
   ENFP: {
     nickName: "올라프⛄",
     nickNameDesc: "🌈🌈사랑은 열린 문~~~🦄🦄",
-    mainImage: `/img/enfp.png`,
+    mainImage: `/img/enfp.gif`,
+    mainPng: `/img/enfp.png`,
     mainDesc: `활기가 넘치고 열정적이에요.
       사는게 종종 힘들다는 생각도 하지만 긍정적으로 잘 이겨내는 편이에요. `,
     
@@ -450,7 +458,8 @@ const resultData = {
   ISTP: {
     nickName: "돌멩이😪💤",
     nickNameDesc: "파티를 빠진게 죄는 아니잖아!!!🗿🗿",
-    mainImage: `/img/istp.png`,
+    mainImage: `/img/istp.gif`,
+    mainPng: `/img/istp.png`,
     mainDesc: `누구보다 혼자 잘 지내고, 집에서
 혼자 할 일이 되게 많아요.🤠
 다른 사람에 관한 관심이 대체로 적은 편이에요.👻`,
@@ -492,7 +501,8 @@ const resultData = {
   ISTJ: {
     nickName: "⛑유교girl(boy)~🙏",
     nickNameDesc: "K-생일파티란 말이다… 🐜🐜",
-    mainImage: `/img/istj.png`,
+    mainImage: `/img/istj.gif`,
+    mainPng: `/img/istj.png`,
     mainDesc: `성실하고 계획적인 성격이에요. 🐜
 상식에 따라 사는 것을 좋아해요. 🐜 🐜`,
     
@@ -539,7 +549,8 @@ const resultData = {
   ISFJ: {
     nickName: "🔬🔬자상보스🍯🔬",
     nickNameDesc: "사소한 것까지 놓치지 않아. Boss 중의 Boss.",
-    mainImage: `/img/isfj.png`,
+    mainImage: `/img/isfj.gif`,
+    mainPng: `/img/isfj.png`,
     mainDesc: `자상한 성격으로 평화를 가장 중요하게 생각해요.
 호의를 베풀지만, 관계에서 예의를 중시해요.
 (좌우명 : 선. 넘지 말고 넘게 두지도 말자!)`,
@@ -583,7 +594,8 @@ const resultData = {
   ESFJ: {
     nickName: "나이아가라폭포🌊",
     nickNameDesc: `아아 지금은 생파중~ 연락 안됩니다~📞🚫`,
-    mainImage: `/img/esfj.png`,
+    mainImage: `/img/esfj.gif`,
+    mainPng: `/img/esfj.png`,
     mainDesc: `다른 사람에 대한 배려가 정말 정말 깊어요
 공감능력 왕!👑👑👑
 주변에 마음을 많이 주는 편이에요.🍑`,
@@ -611,7 +623,7 @@ const resultData = {
     fitFriendsImg:'/img/intp.png',
     unfitFriendsNickName: " “✍🏻데카르트✍🏻”",
     unfitFriendsDesc: '파티란 무엇인가…생일이란 무엇인가… ',
-    unfitFriendsImg: '/img/intj.png',
+    unfitFriendsImg: '/img/intj.gif',
     inFriendsBirthDay: `-사랑이 정말 많은 사람이에요.
       -관계의 소중함을 누구보다 잘 알아요. 
       -좋아하는 당신의 모습을 보며 미소를 지으며 행복해 한답니다. (흐-뭇)`,
@@ -626,7 +638,8 @@ const resultData = {
   ISFP: {
     nickName: "Vlog 유튜버🎥",
     nickNameDesc: `#mood #B-day #일상`,
-    mainImage: `/img/isfp.png`,
+    mainImage: `/img/isfp.gif`,
+    mainPng: `/img/isfp.png`,
     mainDesc: `조용하고 부드러운 성격을 가지고 있어요.🍦
 평소 화도 잘 안 내는 편.❌
 가족과 친구들을 잘 챙겨주는 섬세함을 가졌어요.🧸`,
@@ -672,7 +685,8 @@ const resultData = {
   ESFP: {
     nickName: "🌈찐셀러브리티✨",
     nickNameDesc: `(이미 노는 중)`,
-    mainImage: `/img/esfp.png`,
+    mainImage: `/img/esfp.gif`,
+    mainPng: `/img/esfp.png`,
     mainDesc: `인생은 즐거워! Viva 마이 라이프!🌻
 사람들이 좋아요.👨👨👨👨👨
 PEOPLE PERSON(피플펄슨), 나잖아?!🦜`,
@@ -719,7 +733,8 @@ PEOPLE PERSON(피플펄슨), 나잖아?!🦜`,
   ESTP: {
     nickName: "👉갓 물주 👉",
     nickNameDesc: `생일? 묻고 따블로 가! 🎂🎂`,
-    mainImage: `/img/estp.png`,
+    mainImage: `/img/estp.gif`,
+    mainPng: `/img/estp.png`,
     mainDesc: `일단 화끈해요.🔥🔥🔥 표현도 잘해요.🔥🔥
 사람들은 날 예측할 수 없대요.
 근데 그게 다 매력 있다는 소리 아닌가요?👀`,
@@ -765,7 +780,8 @@ PEOPLE PERSON(피플펄슨), 나잖아?!🦜`,
   ESTJ: {
     nickName: "헤르미온느🚀",
     nickNameDesc: `자 빠르게 준비해볼까? 🔫`,
-    mainImage: `/img/estj.png`,
+    mainImage: `/img/estj.gif`,
+    mainPng: `/img/estj.png`,
     mainDesc: `솔직하고 뭐든지 잘하는
 만능엔터테인먼트에요.🎻
 선물과 관계에서 모두 호불호가 정확해요.🦉`,

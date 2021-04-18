@@ -51,7 +51,6 @@ function ResultPage({ history }) {
 
   useEffect(() => {
     document.querySelector('#root').scrollTo({top:0, left:0})
-    
   },[mbti])
   // console.log(allArr)
   // console.log(resultKeys)
@@ -86,8 +85,7 @@ function ResultPage({ history }) {
                     <div className="imgWrapper">
                        <img
                       className="all-elem-img" 
-                        src={type?.mainImage}
-                        style={{height: type?.nickName === '🔥🔥열정열정열정맨🔥🔥' ? '':''}}
+                        src={type?.mainPng}
                       alt=''
                     />
                     </div>
@@ -181,11 +179,7 @@ function ResultPage({ history }) {
                     <div className="contents">
                       {mbtiData && stringBreak(mbtiData?.presentYouWillDislike)}
                     </div>
-
-                    
                 </div>
-               
-
                 {/* <img className="resultText" src={mbtiData?.textImage} alt=""/>
                  */}
                 {/* <div className="resultText" >
@@ -206,11 +200,7 @@ function ResultPage({ history }) {
                   </div>
                   {stringBreak(mbtiData?.inMyBirthDay)}
                 </div>
-                
-
               </div> */}
-             
-                
               </div>
               <div className="combinationBox"
                 style={{
