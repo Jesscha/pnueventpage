@@ -61,8 +61,8 @@ function ResultPage({ history }) {
                 <meta charSet="utf-8" />
                 <title>Question</title>
                 <link rel="canonical" href="http://mysite.com/example" />
-                <meta property="og:description" content={resultData[mbti.trim()]?.nickName} />
-                <meta property="og:image" content={resultData[mbti.trim()]?.mainImage} />
+                <meta property="og:description" content={`당신은 ${resultData[mbti.trim().toUpperCase()]?.nickName}`} />
+                <meta property="og:image" content={resultData[mbti.trim().toUpperCase()]?.mainImage} />
                 <meta property="og:image:width" content="800"/>
                 <meta property="og:image:height" content="400"/>
         </Helmet>
