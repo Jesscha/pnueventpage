@@ -44,28 +44,27 @@ function ResultPage({ history }) {
     return () => {
       document.querySelector('.container').style.cssText = 'width: 80vw';
       document.querySelector('#root').style.cssText = 'overflow-x: visible'
-      document.body.style.height = "";
-      
+      document.body.style.height = ""; 
     }
   }, [])
 
   useEffect(() => {
-    document.querySelector('#root').scrollTo({top:0, left:0})
-    
+    document.querySelector('#root').scrollTo({ top: 0, left: 0 })
+    alert('test');
   },[mbti])
   // console.log(allArr)
   // console.log(resultKeys)
   return (
     <div className="resultPage">
       <Helmet>
-                <meta charSet="utf-8" />
-                <title>{mbti.trim() === "all" ? '모든 결과' : `당신은 ${resultData[mbti.trim().toUpperCase()]?.nickName}`}</title>
-                {/* <link rel="canonical" href="http://mysite.com/example" /> */}
-                <meta property="og:description" content={mbti.trim() === "all" ? '모든 결과': `당신은 ${resultData[mbti.trim().toUpperCase()]?.nickName}`} />
-                <meta property="og:image" content={mbti.trim() === "all" ? null : resultData[mbti.trim().toUpperCase()]?.mainImage} />
-                <meta property="og:image:width" content="800"/>
-                <meta property="og:image:height" content="400"/>
-        </Helmet>
+        <meta charSet="utf-8" />
+        <title>{mbti.trim() === "all" ? '모든 결과' : `당신은 ${resultData[mbti.trim().toUpperCase()]?.nickName}`}</title>
+        {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+        <meta property="og:description" content={mbti.trim() === "all" ? '모든 결과': `당신은 ${resultData[mbti.trim().toUpperCase()]?.nickName}`} />
+        <meta property="og:image" content={mbti.trim() === "all" ? null : resultData[mbti.trim().toUpperCase()]?.mainImage} />
+        <meta property="og:image:width" content="800"/>
+        <meta property="og:image:height" content="400"/>
+      </Helmet>
       <div className="logo" onClick={() => {
         history.push('/');
       }}>
