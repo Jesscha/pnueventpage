@@ -44,13 +44,14 @@ function ResultPage({ history }) {
     return () => {
       document.querySelector('.container').style.cssText = 'width: 80vw';
       document.querySelector('#root').style.cssText = 'overflow-x: visible'
-      document.body.style.height = ""; 
+      document.body.style.height = "";
+      
     }
   }, [])
 
   useEffect(() => {
-    document.querySelector('#root').scrollTo({ top: 0, left: 0 })
-    alert('test');
+    document.querySelector('#root').scrollTo({top:0, left:0})
+    
   },[mbti])
   // console.log(allArr)
   // console.log(resultKeys)
