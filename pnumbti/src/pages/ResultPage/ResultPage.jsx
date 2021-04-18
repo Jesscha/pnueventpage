@@ -61,7 +61,7 @@ function ResultPage({ history }) {
         <title>{mbti.trim() === "all" ? '모든 결과' : `당신은 ${resultData[mbti.trim().toUpperCase()]?.nickName}`}</title>
         {/* <link rel="canonical" href="http://mysite.com/example" /> */}
         <meta property="og:description" content={mbti.trim() === "all" ? '모든 결과': `당신은 ${resultData[mbti.trim().toUpperCase()]?.nickName}`} />
-        <meta property="og:image" content={mbti.trim() === "all" ? null : resultData[mbti.trim().toUpperCase()]?.mainImage} />
+        <meta property="og:image" content={mbti.trim() === "all" ? null : resultData[mbti.trim().toUpperCase()]?.mainPng} />
         <meta property="og:image:width" content="800"/>
         <meta property="og:image:height" content="400"/>
       </Helmet>
